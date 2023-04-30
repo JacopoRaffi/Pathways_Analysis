@@ -1,0 +1,815 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" xml:base="http://www.reactome.org/biopax/84/5660862#">
+  <owl:Ontology rdf:about="">
+    <owl:imports rdf:resource="http://www.biopax.org/release/biopax-level3.owl" />
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BioPAX pathway converted from "Defective SLC7A7 causes lysinuric protein intolerance (LPI)" in the Reactome database.</rdfs:comment>
+  </owl:Ontology>
+  <bp:Pathway rdf:ID="Pathway1">
+    <bp:pathwayComponent rdf:resource="#BiochemicalReaction1" />
+    <bp:pathwayOrder rdf:resource="#PathwayStep1" />
+    <bp:organism rdf:resource="#BioSource1" />
+    <bp:displayName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Defective SLC7A7 causes lysinuric protein intolerance (LPI)</bp:displayName>
+    <bp:xref rdf:resource="#UnificationXref43" />
+    <bp:xref rdf:resource="#UnificationXref44" />
+    <bp:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SLC7A7 encodes the y+L amino acid transporter 1 (y+LAT1). As a heterodimer with SLC3A2 in the plasma membrane, SLC7A7 mediates the exchange of arginine (L-Arg) for leucine (L-Leu) and a sodium ion (Na+). The physiological concentrations of arginine and leucine are expected to favor arginine export (Schweikhard &amp; Ziegler 2012). Defects in SLC7A7 can cause Lysinuric protein intolerance (LPI; MIM:222700), a metabolic disorder characterised by decreased cationic amino acid (CAA) transport at the basolateral membrane of epithelial cells in the intestine and kidney, increased renal excretion of CAA and orotic aciduria. There is extreme variability clinically but typical symptoms include refusal to feed, vomiting and consequent failure to thrive. Hepatosplenomegaly, hematological anomalies and neurological involvement are recurrent clinical features (Sperandeo et al. 2008, Sebastio et al. 2011).&lt;br&gt;</bp:comment>
+    <bp:xref rdf:resource="#PublicationXref5" />
+    <bp:xref rdf:resource="#PublicationXref6" />
+    <bp:xref rdf:resource="#PublicationXref7" />
+    <bp:dataSource rdf:resource="#Provenance1" />
+    <bp:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Authored: Jassal, Bijay, 2014-08-22</bp:comment>
+    <bp:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Reviewed: Broer, Stefan, 2015-08-04</bp:comment>
+    <bp:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Edited: Jassal, Bijay, 2014-08-22</bp:comment>
+  </bp:Pathway>
+  <bp:BiochemicalReaction rdf:ID="BiochemicalReaction1">
+    <bp:conversionDirection rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LEFT-TO-RIGHT</bp:conversionDirection>
+    <bp:left rdf:resource="#SmallMolecule1" />
+    <bp:left rdf:resource="#SmallMolecule2" />
+    <bp:left rdf:resource="#SmallMolecule3" />
+    <bp:displayName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Defective SLC7A7 does not exchange L-Arg for L-Leu, Na+ across the plasma membrane</bp:displayName>
+    <bp:xref rdf:resource="#UnificationXref41" />
+    <bp:xref rdf:resource="#UnificationXref42" />
+    <bp:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SLC7A7 encodes the y+L amino acid transporter 1 (y+LAT1). As a heterodimer with SLC3A2 in the plasma membrane, SLC7A7 mediates the exchange of arginine (L-Arg) for leucine (L-Leu) and a sodium ion (Na+). The physiological concentrations of arginine and leucine are expected to favor arginine export. Defects in SLC7A7 can cause Lysinuric protein intolerance (LPI; MIM:222700), a metabolic disorder characterised by decreased cationic amino acid (CAA) transport at the basolateral membrane of epithelial cells in the intestine and kidney, increased renal excretion of CAA and orotic aciduria. Mutations in SLC7A7 that can cause LPI include M50K, T188I, L334R, W242*, Y457* and T299Ifs*10 (Sperandeo et al. 2005, Torrents et al. 1999, Sperandeo et al. 2000, Borgani et al. 1999).</bp:comment>
+    <bp:xref rdf:resource="#PublicationXref1" />
+    <bp:xref rdf:resource="#PublicationXref2" />
+    <bp:xref rdf:resource="#PublicationXref3" />
+    <bp:xref rdf:resource="#PublicationXref4" />
+    <bp:dataSource rdf:resource="#Provenance1" />
+    <bp:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Authored: Jassal, Bijay, 2015-01-07</bp:comment>
+    <bp:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Reviewed: Broer, Stefan, 2015-08-04</bp:comment>
+    <bp:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Edited: Jassal, Bijay, 2015-01-07</bp:comment>
+  </bp:BiochemicalReaction>
+  <bp:SmallMolecule rdf:ID="SmallMolecule1">
+    <bp:displayName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Na+</bp:displayName>
+    <bp:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sodium ion</bp:name>
+    <bp:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sodium(1+)</bp:name>
+    <bp:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sodium</bp:name>
+    <bp:cellularLocation rdf:resource="#CellularLocationVocabulary1" />
+    <bp:entityReference rdf:resource="#SmallMoleculeReference1" />
+    <bp:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Reactome DB_ID: 74113</bp:comment>
+    <bp:xref rdf:resource="#UnificationXref3" />
+    <bp:xref rdf:resource="#UnificationXref4" />
+    <bp:dataSource rdf:resource="#Provenance1" />
+    <bp:xref rdf:resource="#RelationshipXref1" />
+  </bp:SmallMolecule>
+  <bp:CellularLocationVocabulary rdf:ID="CellularLocationVocabulary1">
+    <bp:term rdf:datatype="http://www.w3.org/2001/XMLSchema#string">extracellular region</bp:term>
+    <bp:xref rdf:resource="#UnificationXref1" />
+  </bp:CellularLocationVocabulary>
+  <bp:UnificationXref rdf:ID="UnificationXref1">
+    <bp:db rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GENE ONTOLOGY</bp:db>
+    <bp:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GO:0005576</bp:id>
+  </bp:UnificationXref>
+  <bp:SmallMoleculeReference rdf:ID="SmallMoleculeReference1">
+    <bp:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sodium(1+) [ChEBI:29101]</bp:name>
+    <bp:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sodium(1+)</bp:name>
+    <bp:xref rdf:resource="#UnificationXref2" />
+  </bp:SmallMoleculeReference>
+  <bp:UnificationXref rdf:ID="UnificationXref2">
+    <bp:db rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ChEBI</bp:db>
+    <bp:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CHEBI:29101</bp:id>
+  </bp:UnificationXref>
+  <bp:UnificationXref rdf:ID="UnificationXref3">
+    <bp:db rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Reactome Database ID Release 84</bp:db>
+    <bp:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">74113</bp:id>
+    <bp:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Database identifier. Use this URL to connect to the web page of this instance in Reactome: http://www.reactome.org/cgi-bin/eventbrowser?DB=gk_current&amp;ID=74113</bp:comment>
+  </bp:UnificationXref>
+  <bp:UnificationXref rdf:ID="UnificationXref4">
+    <bp:db rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Reactome</bp:db>
+    <bp:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">R-ALL-74113</bp:id>
+    <bp:idVersion rdf:datatype="http://www.w3.org/2001/XMLSchema#string">3</bp:idVersion>
+    <bp:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Reactome stable identifier. Use this URL to connect to the web page of this instance in Reactome: http://www.reactome.org/cgi-bin/eventbrowser_st_id?ST_ID=R-ALL-74113.3</bp:comment>
+  </bp:UnificationXref>
+  <bp:Provenance rdf:ID="Provenance1">
+    <bp:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Reactome</bp:name>
+    <bp:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.reactome.org</bp:comment>
+  </bp:Provenance>
+  <bp:RelationshipXref rdf:ID="RelationshipXref1">
+    <bp:relationshipType rdf:resource="#RelationshipTypeVocabulary1" />
+    <bp:db rdf:datatype="http://www.w3.org/2001/XMLSchema#string">COMPOUND</bp:db>
+    <bp:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C01330</bp:id>
+  </bp:RelationshipXref>
+  <bp:RelationshipTypeVocabulary rdf:ID="RelationshipTypeVocabulary1">
+    <bp:term rdf:datatype="http://www.w3.org/2001/XMLSchema#string">additional information</bp:term>
+    <bp:xref rdf:resource="#UnificationXref5" />
+  </bp:RelationshipTypeVocabulary>
+  <bp:UnificationXref rdf:ID="UnificationXref5">
+    <bp:db rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MI</bp:db>
+    <bp:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MI:0361</bp:id>
+  </bp:UnificationXref>
+  <bp:SmallMolecule rdf:ID="SmallMolecule2">
+    <bp:displayName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">L-Arg</bp:displayName>
+    <bp:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">(S)-2-Amino-5-guanidinovaleric acid</bp:name>
+    <bp:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">L-argininium(1+)</bp:name>
+    <bp:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">L-arginine</bp:name>
+    <bp:cellularLocation rdf:resource="#CellularLocationVocabulary2" />
+    <bp:entityReference rdf:resource="#SmallMoleculeReference2" />
+    <bp:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Reactome DB_ID: 29468</bp:comment>
+    <bp:xref rdf:resource="#UnificationXref8" />
+    <bp:xref rdf:resource="#UnificationXref9" />
+    <bp:dataSource rdf:resource="#Provenance1" />
+    <bp:xref rdf:resource="#RelationshipXref2" />
+  </bp:SmallMolecule>
+  <bp:CellularLocationVocabulary rdf:ID="CellularLocationVocabulary2">
+    <bp:term rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cytosol</bp:term>
+    <bp:xref rdf:resource="#UnificationXref6" />
+  </bp:CellularLocationVocabulary>
+  <bp:UnificationXref rdf:ID="UnificationXref6">
+    <bp:db rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GENE ONTOLOGY</bp:db>
+    <bp:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GO:0005829</bp:id>
+  </bp:UnificationXref>
+  <bp:SmallMoleculeReference rdf:ID="SmallMoleculeReference2">
+    <bp:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">L-argininium(1+) [ChEBI:32682]</bp:name>
+    <bp:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">L-argininium(1+)</bp:name>
+    <bp:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NC(=[NH2+])NCCC[C@H]([NH3+])C([O-])=O</bp:name>
+    <bp:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">InChI=1S/C6H14N4O2/c7-4(5(11)12)2-1-3-10-6(8)9/h4H,1-3,7H2,(H,11,12)(H4,8,9,10)/p+1/t4-/m0/s1</bp:name>
+    <bp:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ODKSFYDXXFIFQN-BYPYZUCNSA-O</bp:name>
+    <bp:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">L-argininium</bp:name>
+    <bp:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">L-arginine monocation</bp:name>
+    <bp:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C6H15N4O2</bp:name>
+    <bp:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">(2S)-2-ammonio-5-guanidiniopentanoate</bp:name>
+    <bp:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">L-arginine</bp:name>
+    <bp:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">175.20906</bp:name>
+    <bp:xref rdf:resource="#UnificationXref7" />
+  </bp:SmallMoleculeReference>
+  <bp:UnificationXref rdf:ID="UnificationXref7">
+    <bp:db rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ChEBI</bp:db>
+    <bp:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CHEBI:32682</bp:id>
+  </bp:UnificationXref>
+  <bp:UnificationXref rdf:ID="UnificationXref8">
+    <bp:db rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Reactome Database ID Release 84</bp:db>
+    <bp:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">29468</bp:id>
+    <bp:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Database identifier. Use this URL to connect to the web page of this instance in Reactome: http://www.reactome.org/cgi-bin/eventbrowser?DB=gk_current&amp;ID=29468</bp:comment>
+  </bp:UnificationXref>
+  <bp:UnificationXref rdf:ID="UnificationXref9">
+    <bp:db rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Reactome</bp:db>
+    <bp:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">R-ALL-29468</bp:id>
+    <bp:idVersion rdf:datatype="http://www.w3.org/2001/XMLSchema#string">4</bp:idVersion>
+    <bp:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Reactome stable identifier. Use this URL to connect to the web page of this instance in Reactome: http://www.reactome.org/cgi-bin/eventbrowser_st_id?ST_ID=R-ALL-29468.4</bp:comment>
+  </bp:UnificationXref>
+  <bp:RelationshipXref rdf:ID="RelationshipXref2">
+    <bp:relationshipType rdf:resource="#RelationshipTypeVocabulary1" />
+    <bp:db rdf:datatype="http://www.w3.org/2001/XMLSchema#string">COMPOUND</bp:db>
+    <bp:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C00062</bp:id>
+  </bp:RelationshipXref>
+  <bp:SmallMolecule rdf:ID="SmallMolecule3">
+    <bp:displayName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">L-Leu</bp:displayName>
+    <bp:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2-amino-4-methylvaleric acid</bp:name>
+    <bp:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">L-leucine zwitterion</bp:name>
+    <bp:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">L-leucine</bp:name>
+    <bp:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">(2S)-alpha-2-Amino-4-methylvaleric acid</bp:name>
+    <bp:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">(2S)-alpha-Leucine</bp:name>
+    <bp:cellularLocation rdf:resource="#CellularLocationVocabulary1" />
+    <bp:entityReference rdf:resource="#SmallMoleculeReference3" />
+    <bp:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Reactome DB_ID: 351964</bp:comment>
+    <bp:xref rdf:resource="#UnificationXref11" />
+    <bp:xref rdf:resource="#UnificationXref12" />
+    <bp:dataSource rdf:resource="#Provenance1" />
+    <bp:xref rdf:resource="#RelationshipXref3" />
+  </bp:SmallMolecule>
+  <bp:SmallMoleculeReference rdf:ID="SmallMoleculeReference3">
+    <bp:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">L-leucine zwitterion [ChEBI:57427]</bp:name>
+    <bp:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">L-leucine zwitterion</bp:name>
+    <bp:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">131.17290</bp:name>
+    <bp:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">InChI=1S/C6H13NO2/c1-4(2)3-5(7)6(8)9/h4-5H,3,7H2,1-2H3,(H,8,9)/t5-/m0/s1</bp:name>
+    <bp:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">L-leucine</bp:name>
+    <bp:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CC(C)C[C@H]([NH3+])C([O-])=O</bp:name>
+    <bp:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ROHFNLRQFUQHCH-YFKPBYRVSA-N</bp:name>
+    <bp:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">(2S)-2-azaniumyl-4-methylpentanoate</bp:name>
+    <bp:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C6H13NO2</bp:name>
+    <bp:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">leucine zwitterion</bp:name>
+    <bp:xref rdf:resource="#UnificationXref10" />
+  </bp:SmallMoleculeReference>
+  <bp:UnificationXref rdf:ID="UnificationXref10">
+    <bp:db rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ChEBI</bp:db>
+    <bp:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CHEBI:57427</bp:id>
+  </bp:UnificationXref>
+  <bp:UnificationXref rdf:ID="UnificationXref11">
+    <bp:db rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Reactome Database ID Release 84</bp:db>
+    <bp:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">351964</bp:id>
+    <bp:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Database identifier. Use this URL to connect to the web page of this instance in Reactome: http://www.reactome.org/cgi-bin/eventbrowser?DB=gk_current&amp;ID=351964</bp:comment>
+  </bp:UnificationXref>
+  <bp:UnificationXref rdf:ID="UnificationXref12">
+    <bp:db rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Reactome</bp:db>
+    <bp:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">R-ALL-351964</bp:id>
+    <bp:idVersion rdf:datatype="http://www.w3.org/2001/XMLSchema#string">4</bp:idVersion>
+    <bp:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Reactome stable identifier. Use this URL to connect to the web page of this instance in Reactome: http://www.reactome.org/cgi-bin/eventbrowser_st_id?ST_ID=R-ALL-351964.4</bp:comment>
+  </bp:UnificationXref>
+  <bp:RelationshipXref rdf:ID="RelationshipXref3">
+    <bp:relationshipType rdf:resource="#RelationshipTypeVocabulary1" />
+    <bp:db rdf:datatype="http://www.w3.org/2001/XMLSchema#string">COMPOUND</bp:db>
+    <bp:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C00123</bp:id>
+  </bp:RelationshipXref>
+  <bp:Catalysis rdf:ID="Catalysis1">
+    <bp:controller rdf:resource="#Complex1" />
+    <bp:controlled rdf:resource="#BiochemicalReaction1" />
+    <bp:controlType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ACTIVATION</bp:controlType>
+    <bp:xref rdf:resource="#RelationshipXref4" />
+    <bp:xref rdf:resource="#RelationshipXref5" />
+    <bp:dataSource rdf:resource="#Provenance1" />
+  </bp:Catalysis>
+  <bp:Complex rdf:ID="Complex1">
+    <bp:displayName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SLC3A2:SLC7A7 mutants</bp:displayName>
+    <bp:cellularLocation rdf:resource="#CellularLocationVocabulary3" />
+    <bp:componentStoichiometry rdf:resource="#Stoichiometry1" />
+    <bp:component rdf:resource="#Protein1" />
+    <bp:componentStoichiometry rdf:resource="#Stoichiometry2" />
+    <bp:component rdf:resource="#Protein2" />
+    <bp:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Reactome DB_ID: 9631849</bp:comment>
+    <bp:xref rdf:resource="#UnificationXref38" />
+    <bp:xref rdf:resource="#UnificationXref39" />
+    <bp:dataSource rdf:resource="#Provenance1" />
+  </bp:Complex>
+  <bp:CellularLocationVocabulary rdf:ID="CellularLocationVocabulary3">
+    <bp:term rdf:datatype="http://www.w3.org/2001/XMLSchema#string">plasma membrane</bp:term>
+    <bp:xref rdf:resource="#UnificationXref13" />
+  </bp:CellularLocationVocabulary>
+  <bp:UnificationXref rdf:ID="UnificationXref13">
+    <bp:db rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GENE ONTOLOGY</bp:db>
+    <bp:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GO:0005886</bp:id>
+  </bp:UnificationXref>
+  <bp:Protein rdf:ID="Protein1">
+    <bp:displayName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">4F2hc</bp:displayName>
+    <bp:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SLC3A2</bp:name>
+    <bp:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">4F2 cell-surface antigen heavy chain</bp:name>
+    <bp:cellularLocation rdf:resource="#CellularLocationVocabulary3" />
+    <bp:entityReference rdf:resource="#ProteinReference1" />
+    <bp:feature rdf:resource="#FragmentFeature1" />
+    <bp:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Reactome DB_ID: 352179</bp:comment>
+    <bp:xref rdf:resource="#UnificationXref16" />
+    <bp:xref rdf:resource="#UnificationXref17" />
+    <bp:dataSource rdf:resource="#Provenance1" />
+  </bp:Protein>
+  <bp:ProteinReference rdf:ID="ProteinReference1">
+    <bp:organism rdf:resource="#BioSource1" />
+    <bp:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UniProt:P08195 SLC3A2</bp:name>
+    <bp:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SLC3A2</bp:name>
+    <bp:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MDU1</bp:name>
+    <bp:xref rdf:resource="#UnificationXref15" />
+    <bp:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FUNCTION Component of several heterodimeric complexes involved in amino acid transport (PubMed:11557028, PubMed:9829974, PubMed:9751058, PubMed:10391915, PubMed:10574970, PubMed:11311135, PubMed:30341327). The precise substrate specificity depends on the other subunit in the heterodimer (PubMed:9829974, PubMed:9751058, PubMed:10391915, PubMed:10574970, PubMed:30867591, PubMed:10903140). The complexes function as amino acid exchangers (PubMed:11557028, PubMed:10903140, PubMed:12117417, PubMed:12225859, PubMed:30867591). The heterodimer functions as sodium-independent, high-affinity transporter that mediates uptake of large neutral amino acids such as phenylalanine, tyrosine, leucine, histidine, methionine, tryptophan, valine and isoleucine (PubMed:9751058, PubMed:11557028, PubMed:11311135, PubMed:11564694, PubMed:12117417, PubMed:12225859, PubMed:25998567, PubMed:30867591, PubMed:30341327). The heterodimer with SLC7A5/LAT1 mediates the uptake of L-DOPA (By similarity). The heterodimer formed by SLC3A2 and SLC7A6 or SLC3A2 and SLC7A7 mediates the uptake of dibasic amino acids (PubMed:9829974, PubMed:10903140). The heterodimer with SLC7A5/LAT1 mediates the transport of thyroid hormones diiodothyronine (T2), triiodothyronine (T3) and thyroxine (T4) across the cell membrane (PubMed:11564694, PubMed:12225859). The heterodimer with SLC7A5/LAT1 is involved in the uptake of toxic methylmercury (MeHg) when administered as the L-cysteine or D,L-homocysteine complexes (PubMed:12117417). When associated with LAPTM4B, the heterodimer with SLC7A5/LAT1 is recruited to lysosomes to promote leucine uptake into these organelles, and thereby mediates mTORC1 activation (PubMed:25998567). The heterodimer with SLC7A5/LAT1 may play a role in the transport of L-DOPA across the blood-brain barrier (By similarity). The heterodimer formed by SLC3A2 and SLC7A5/LAT1 or SLC3A2 and SLC7A8/LAT2 is involved in the cellular activity of small molecular weight nitrosothiols, via the stereoselective transport of L-nitrosocysteine (L-CNSO) across the transmembrane (PubMed:15769744). The heterodimer with SLC7A10 translocates small neutral L- and D-amino acids across the plasma membrane. SLC3A2-SLC7A10 preferentially mediates exchange transport, but can also operate via facilitated diffusion (By similarity). Together with ICAM1, regulates the transport activity of SLC7A8/LAT2 in polarized intestinal cells by generating and delivering intracellular signals (PubMed:12716892). Required for targeting of SLC7A5/LAT1 and SLC7A8/LAT2 to the plasma membrane and for channel activity (PubMed:9751058, PubMed:11311135, PubMed:30867591). Plays a role in nitric oxide synthesis in human umbilical vein endothelial cells (HUVECs) via transport of L-arginine (PubMed:14603368). May mediate blood-to-retina L-leucine transport across the inner blood-retinal barrier (By similarity).FUNCTION (Microbial infection) In case of hepatitis C virus/HCV infection, the complex formed by SLC3A2 and SLC7A5/LAT1 plays a role in HCV propagation by facilitating viral entry into host cell and increasing L-leucine uptake-mediated mTORC1 signaling activation, thereby contributing to HCV-mediated pathogenesis.ACTIVITY REGULATION The uptake of leucine, tyrosine and tryptophan is inhibited by the different iodothyronines, in particular T3 (PubMed:11564694). The uptake of T3 is almost completely blocked by coincubation with leucine, tryptophan, tyrosine, and phenylalanine, or 2-amino-bicyclo-(2,2,1)-heptane-2-carboxylate (BCH) (PubMed:11564694). Methionine uptake was inhibited by the L-system substrates L-leucine, BCH, L-cysteine and by the MeHg-L-cysteine complex and structurally related S-ethyl-L-cysteine (PubMed:12117417). MeHg-L-cysteine uptake is inhibited by L-methionine, L-leucine, BCH and S-ethyl-L-cysteine (PubMed:12117417). L-leucine transport is inhibited by phenylalanine, tyrosine, L-dopa, 3-O-methyldopa, a-methyltyrosine, a-methyldopa, gabapentin, triiodothyronine, thyroxine, melphalan and BCH (PubMed:12225859). L-leucine uptake was inhibited by L-CNSO (PubMed:15769744).SUBUNIT Disulfide-linked heterodimer with a non-glycosylated light chain (SLC7A5/LAT1, SLC7A6, SLCA7A7, SLC7A8/LAT2, SLC7A10 or SLCA7A11) (PubMed:11557028, PubMed:9829974, PubMed:9751058, PubMed:10574970, PubMed:10903140,PubMed:11311135, PubMed:30867591, PubMed:9751058, PubMed:12225859, PubMed:12117417, PubMed:15769744). Interacts with TLCD3A/CT120 (PubMed:12270127). Interacts with ICAM1 (PubMed:12716892). Constitutively and specifically associates with beta-1 integrins (alpha-2/beta-1, alpha-3/beta-1, alpha-5/beta-1 and alpha-6/beta-1), but minimally with alpha-4/beta-1 (PubMed:11696247). Interacts with LAPTM4B; recruits SLC3A2 and SLC7A5/LAT1 to lysosomes to promote leucine uptake into these organelles and is required for mTORC1 activation (PubMed:25998567).SUBUNIT (Microbial infection) Interacts with hepatitis C virus/HCV envelope glycoprotein E2; the interaction may facilitate viral entry into host cell.TISSUE SPECIFICITY Expressed ubiquitously in all tissues tested with highest levels detected in kidney, placenta and testis and weakest level in thymus. During gestation, expression in the placenta was significantly stronger at full-term than at the mid-trimester stage. Expressed in HUVECS and at low levels in resting peripheral blood T-lymphocytes and quiescent fibroblasts. Also expressed in fetal liver and in the astrocytic process of primary astrocytic gliomas. Expressed in retinal endothelial cells and in the intestinal epithelial cell line C2BBe1.INDUCTION Expression is induced in resting peripheral blood T-lymphocytes following PHA stimulation. Expression increases at the time of maximal DNA synthesis, in fibroblasts stimulated to divide. Expression and the uptake of leucine is stimulated in mononuclear, cytotrophoblast-like choriocarcinoma cells by combined treatment with PMA and calcium ionophore. Up-regulated in response to hydrogen peroxide (PubMed:30341327).INDUCTION (Microbial infection) Up-regulated upon hepatitis C virus/HCV infection via NS3-A4 viral protein complex; the up-regulation is mediated by oxidative stress (PubMed:30341327). Up-regulation of the complex formed by SLC3A2 and SLC7A5/LAT1 upon hepatitis C virus/HCV infection (PubMed:30341327).PTM Phosphorylation on Ser-406; Ser-408 or Ser-410 and on Ser-527 or Ser-531 by ecto-protein kinases favors heterotypic cell-cell interactions.MISCELLANEOUS Arginine uptake is inhibited by increasing concentrations of leucine in the presence of Na(+).SIMILARITY Belongs to the SLC3A transporter family.</bp:comment>
+  </bp:ProteinReference>
+  <bp:BioSource rdf:ID="BioSource1">
+    <bp:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Homo sapiens</bp:name>
+    <bp:xref rdf:resource="#UnificationXref14" />
+  </bp:BioSource>
+  <bp:UnificationXref rdf:ID="UnificationXref14">
+    <bp:db rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCBI Taxonomy</bp:db>
+    <bp:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">9606</bp:id>
+  </bp:UnificationXref>
+  <bp:UnificationXref rdf:ID="UnificationXref15">
+    <bp:db rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UniProt</bp:db>
+    <bp:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">P08195</bp:id>
+  </bp:UnificationXref>
+  <bp:FragmentFeature rdf:ID="FragmentFeature1">
+    <bp:featureLocation rdf:resource="#SequenceInterval1" />
+  </bp:FragmentFeature>
+  <bp:SequenceInterval rdf:ID="SequenceInterval1">
+    <bp:sequenceIntervalBegin rdf:resource="#SequenceSite1" />
+    <bp:sequenceIntervalEnd rdf:resource="#SequenceSite2" />
+  </bp:SequenceInterval>
+  <bp:SequenceSite rdf:ID="SequenceSite1">
+    <bp:sequencePosition rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</bp:sequencePosition>
+    <bp:positionStatus rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EQUAL</bp:positionStatus>
+  </bp:SequenceSite>
+  <bp:SequenceSite rdf:ID="SequenceSite2">
+    <bp:sequencePosition rdf:datatype="http://www.w3.org/2001/XMLSchema#int">630</bp:sequencePosition>
+    <bp:positionStatus rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EQUAL</bp:positionStatus>
+  </bp:SequenceSite>
+  <bp:UnificationXref rdf:ID="UnificationXref16">
+    <bp:db rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Reactome Database ID Release 84</bp:db>
+    <bp:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">352179</bp:id>
+    <bp:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Database identifier. Use this URL to connect to the web page of this instance in Reactome: http://www.reactome.org/cgi-bin/eventbrowser?DB=gk_current&amp;ID=352179</bp:comment>
+  </bp:UnificationXref>
+  <bp:UnificationXref rdf:ID="UnificationXref17">
+    <bp:db rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Reactome</bp:db>
+    <bp:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">R-HSA-352179</bp:id>
+    <bp:idVersion rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1</bp:idVersion>
+    <bp:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Reactome stable identifier. Use this URL to connect to the web page of this instance in Reactome: http://www.reactome.org/cgi-bin/eventbrowser_st_id?ST_ID=R-HSA-352179.1</bp:comment>
+  </bp:UnificationXref>
+  <bp:Stoichiometry rdf:ID="Stoichiometry1">
+    <bp:stoichiometricCoefficient rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1</bp:stoichiometricCoefficient>
+    <bp:physicalEntity rdf:resource="#Protein1" />
+  </bp:Stoichiometry>
+  <bp:Protein rdf:ID="Protein2">
+    <bp:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Converted from EntitySet in Reactome</bp:comment>
+    <bp:memberPhysicalEntity rdf:resource="#Protein3" />
+    <bp:memberPhysicalEntity rdf:resource="#Protein4" />
+    <bp:memberPhysicalEntity rdf:resource="#Protein5" />
+    <bp:memberPhysicalEntity rdf:resource="#Protein6" />
+    <bp:memberPhysicalEntity rdf:resource="#Protein7" />
+    <bp:memberPhysicalEntity rdf:resource="#Protein8" />
+    <bp:displayName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SLC7A7 mutants</bp:displayName>
+    <bp:cellularLocation rdf:resource="#CellularLocationVocabulary3" />
+    <bp:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Reactome DB_ID: 5660894</bp:comment>
+    <bp:xref rdf:resource="#UnificationXref36" />
+    <bp:xref rdf:resource="#UnificationXref37" />
+    <bp:dataSource rdf:resource="#Provenance1" />
+  </bp:Protein>
+  <bp:Protein rdf:ID="Protein3">
+    <bp:displayName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SLC7A7 L334R</bp:displayName>
+    <bp:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Y+L amino acid transporter 1</bp:name>
+    <bp:cellularLocation rdf:resource="#CellularLocationVocabulary3" />
+    <bp:entityReference rdf:resource="#ProteinReference2" />
+    <bp:feature rdf:resource="#ModificationFeature1" />
+    <bp:feature rdf:resource="#FragmentFeature2" />
+    <bp:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Reactome DB_ID: 5660926</bp:comment>
+    <bp:xref rdf:resource="#UnificationXref20" />
+    <bp:xref rdf:resource="#UnificationXref21" />
+    <bp:dataSource rdf:resource="#Provenance1" />
+  </bp:Protein>
+  <bp:ProteinReference rdf:ID="ProteinReference2">
+    <bp:organism rdf:resource="#BioSource1" />
+    <bp:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UniProt:Q9UM01 SLC7A7</bp:name>
+    <bp:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SLC7A7</bp:name>
+    <bp:xref rdf:resource="#UnificationXref18" />
+    <bp:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FUNCTION Involved in the sodium-independent uptake of dibasic amino acids and sodium-dependent uptake of some neutral amino acids. Requires coexpression with SLC3A2/4F2hc to mediate the uptake of arginine, leucine and glutamine. Plays a role in nitric oxide synthesis in human umbilical vein endothelial cells (HUVECs) via transport of L-arginine. Involved in the transport of L-arginine in monocytes.ACTIVITY REGULATION Arginine transport is inhibited by protein kinase C (PKC) and treatment with phorbol-12-myristate-13-acetate (PMA).SUBUNIT Disulfide-linked heterodimer with the amino acid transport protein SLC3A2/4F2hc.TISSUE SPECIFICITY Highest expression in kidney and peripheral blood leukocytes. Weaker expression is observed in lung, heart, placenta, spleen, testis and small intestine. Expressed in normal fibroblasts and those from LPI patients. Also expressed in HUVECs, monocytes, retinal pigment epithelial cells, and various carcinoma cell lines, with highest expression in a colon-carcinoma cell line.INDUCTION Expression is stimulated and enhanced by IFNG/IFN-gamma.SIMILARITY Belongs to the amino acid-polyamine-organocation (APC) superfamily. L-type amino acid transporter (LAT) (TC 2.A.3.8) family.</bp:comment>
+  </bp:ProteinReference>
+  <bp:UnificationXref rdf:ID="UnificationXref18">
+    <bp:db rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UniProt</bp:db>
+    <bp:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Q9UM01</bp:id>
+  </bp:UnificationXref>
+  <bp:ModificationFeature rdf:ID="ModificationFeature1">
+    <bp:featureLocation rdf:resource="#SequenceSite3" />
+    <bp:modificationType rdf:resource="#SequenceModificationVocabulary1" />
+  </bp:ModificationFeature>
+  <bp:SequenceSite rdf:ID="SequenceSite3">
+    <bp:sequencePosition rdf:datatype="http://www.w3.org/2001/XMLSchema#int">334</bp:sequencePosition>
+    <bp:positionStatus rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EQUAL</bp:positionStatus>
+  </bp:SequenceSite>
+  <bp:SequenceModificationVocabulary rdf:ID="SequenceModificationVocabulary1">
+    <bp:term rdf:datatype="http://www.w3.org/2001/XMLSchema#string">L-leucine removal</bp:term>
+    <bp:xref rdf:resource="#UnificationXref19" />
+  </bp:SequenceModificationVocabulary>
+  <bp:UnificationXref rdf:ID="UnificationXref19">
+    <bp:db rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MOD</bp:db>
+    <bp:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MOD:01641</bp:id>
+  </bp:UnificationXref>
+  <bp:FragmentFeature rdf:ID="FragmentFeature2">
+    <bp:featureLocation rdf:resource="#SequenceInterval2" />
+  </bp:FragmentFeature>
+  <bp:SequenceInterval rdf:ID="SequenceInterval2">
+    <bp:sequenceIntervalBegin rdf:resource="#SequenceSite4" />
+    <bp:sequenceIntervalEnd rdf:resource="#SequenceSite5" />
+  </bp:SequenceInterval>
+  <bp:SequenceSite rdf:ID="SequenceSite4">
+    <bp:sequencePosition rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</bp:sequencePosition>
+    <bp:positionStatus rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EQUAL</bp:positionStatus>
+  </bp:SequenceSite>
+  <bp:SequenceSite rdf:ID="SequenceSite5">
+    <bp:sequencePosition rdf:datatype="http://www.w3.org/2001/XMLSchema#int">511</bp:sequencePosition>
+    <bp:positionStatus rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EQUAL</bp:positionStatus>
+  </bp:SequenceSite>
+  <bp:UnificationXref rdf:ID="UnificationXref20">
+    <bp:db rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Reactome Database ID Release 84</bp:db>
+    <bp:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5660926</bp:id>
+    <bp:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Database identifier. Use this URL to connect to the web page of this instance in Reactome: http://www.reactome.org/cgi-bin/eventbrowser?DB=gk_current&amp;ID=5660926</bp:comment>
+  </bp:UnificationXref>
+  <bp:UnificationXref rdf:ID="UnificationXref21">
+    <bp:db rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Reactome</bp:db>
+    <bp:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">R-HSA-5660926</bp:id>
+    <bp:idVersion rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1</bp:idVersion>
+    <bp:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Reactome stable identifier. Use this URL to connect to the web page of this instance in Reactome: http://www.reactome.org/cgi-bin/eventbrowser_st_id?ST_ID=R-HSA-5660926.1</bp:comment>
+  </bp:UnificationXref>
+  <bp:Protein rdf:ID="Protein4">
+    <bp:displayName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SLC7A7 M50K</bp:displayName>
+    <bp:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Y+L amino acid transporter 1</bp:name>
+    <bp:cellularLocation rdf:resource="#CellularLocationVocabulary3" />
+    <bp:entityReference rdf:resource="#ProteinReference2" />
+    <bp:feature rdf:resource="#ModificationFeature2" />
+    <bp:feature rdf:resource="#FragmentFeature3" />
+    <bp:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Reactome DB_ID: 5660933</bp:comment>
+    <bp:xref rdf:resource="#UnificationXref23" />
+    <bp:xref rdf:resource="#UnificationXref24" />
+    <bp:dataSource rdf:resource="#Provenance1" />
+  </bp:Protein>
+  <bp:ModificationFeature rdf:ID="ModificationFeature2">
+    <bp:featureLocation rdf:resource="#SequenceSite6" />
+    <bp:modificationType rdf:resource="#SequenceModificationVocabulary2" />
+  </bp:ModificationFeature>
+  <bp:SequenceSite rdf:ID="SequenceSite6">
+    <bp:sequencePosition rdf:datatype="http://www.w3.org/2001/XMLSchema#int">50</bp:sequencePosition>
+    <bp:positionStatus rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EQUAL</bp:positionStatus>
+  </bp:SequenceSite>
+  <bp:SequenceModificationVocabulary rdf:ID="SequenceModificationVocabulary2">
+    <bp:term rdf:datatype="http://www.w3.org/2001/XMLSchema#string">L-methionine removal</bp:term>
+    <bp:xref rdf:resource="#UnificationXref22" />
+  </bp:SequenceModificationVocabulary>
+  <bp:UnificationXref rdf:ID="UnificationXref22">
+    <bp:db rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MOD</bp:db>
+    <bp:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MOD:01643</bp:id>
+  </bp:UnificationXref>
+  <bp:FragmentFeature rdf:ID="FragmentFeature3">
+    <bp:featureLocation rdf:resource="#SequenceInterval3" />
+  </bp:FragmentFeature>
+  <bp:SequenceInterval rdf:ID="SequenceInterval3">
+    <bp:sequenceIntervalBegin rdf:resource="#SequenceSite7" />
+    <bp:sequenceIntervalEnd rdf:resource="#SequenceSite8" />
+  </bp:SequenceInterval>
+  <bp:SequenceSite rdf:ID="SequenceSite7">
+    <bp:sequencePosition rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</bp:sequencePosition>
+    <bp:positionStatus rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EQUAL</bp:positionStatus>
+  </bp:SequenceSite>
+  <bp:SequenceSite rdf:ID="SequenceSite8">
+    <bp:sequencePosition rdf:datatype="http://www.w3.org/2001/XMLSchema#int">511</bp:sequencePosition>
+    <bp:positionStatus rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EQUAL</bp:positionStatus>
+  </bp:SequenceSite>
+  <bp:UnificationXref rdf:ID="UnificationXref23">
+    <bp:db rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Reactome Database ID Release 84</bp:db>
+    <bp:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5660933</bp:id>
+    <bp:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Database identifier. Use this URL to connect to the web page of this instance in Reactome: http://www.reactome.org/cgi-bin/eventbrowser?DB=gk_current&amp;ID=5660933</bp:comment>
+  </bp:UnificationXref>
+  <bp:UnificationXref rdf:ID="UnificationXref24">
+    <bp:db rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Reactome</bp:db>
+    <bp:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">R-HSA-5660933</bp:id>
+    <bp:idVersion rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1</bp:idVersion>
+    <bp:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Reactome stable identifier. Use this URL to connect to the web page of this instance in Reactome: http://www.reactome.org/cgi-bin/eventbrowser_st_id?ST_ID=R-HSA-5660933.1</bp:comment>
+  </bp:UnificationXref>
+  <bp:Protein rdf:ID="Protein5">
+    <bp:displayName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SLC7A7 T188I</bp:displayName>
+    <bp:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Y+L amino acid transporter 1</bp:name>
+    <bp:cellularLocation rdf:resource="#CellularLocationVocabulary3" />
+    <bp:entityReference rdf:resource="#ProteinReference2" />
+    <bp:feature rdf:resource="#ModificationFeature3" />
+    <bp:feature rdf:resource="#FragmentFeature4" />
+    <bp:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Reactome DB_ID: 5660932</bp:comment>
+    <bp:xref rdf:resource="#UnificationXref26" />
+    <bp:xref rdf:resource="#UnificationXref27" />
+    <bp:dataSource rdf:resource="#Provenance1" />
+  </bp:Protein>
+  <bp:ModificationFeature rdf:ID="ModificationFeature3">
+    <bp:featureLocation rdf:resource="#SequenceSite9" />
+    <bp:modificationType rdf:resource="#SequenceModificationVocabulary3" />
+  </bp:ModificationFeature>
+  <bp:SequenceSite rdf:ID="SequenceSite9">
+    <bp:sequencePosition rdf:datatype="http://www.w3.org/2001/XMLSchema#int">188</bp:sequencePosition>
+    <bp:positionStatus rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EQUAL</bp:positionStatus>
+  </bp:SequenceSite>
+  <bp:SequenceModificationVocabulary rdf:ID="SequenceModificationVocabulary3">
+    <bp:term rdf:datatype="http://www.w3.org/2001/XMLSchema#string">L-threonine removal</bp:term>
+    <bp:xref rdf:resource="#UnificationXref25" />
+  </bp:SequenceModificationVocabulary>
+  <bp:UnificationXref rdf:ID="UnificationXref25">
+    <bp:db rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MOD</bp:db>
+    <bp:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MOD:01647</bp:id>
+  </bp:UnificationXref>
+  <bp:FragmentFeature rdf:ID="FragmentFeature4">
+    <bp:featureLocation rdf:resource="#SequenceInterval4" />
+  </bp:FragmentFeature>
+  <bp:SequenceInterval rdf:ID="SequenceInterval4">
+    <bp:sequenceIntervalBegin rdf:resource="#SequenceSite10" />
+    <bp:sequenceIntervalEnd rdf:resource="#SequenceSite11" />
+  </bp:SequenceInterval>
+  <bp:SequenceSite rdf:ID="SequenceSite10">
+    <bp:sequencePosition rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</bp:sequencePosition>
+    <bp:positionStatus rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EQUAL</bp:positionStatus>
+  </bp:SequenceSite>
+  <bp:SequenceSite rdf:ID="SequenceSite11">
+    <bp:sequencePosition rdf:datatype="http://www.w3.org/2001/XMLSchema#int">511</bp:sequencePosition>
+    <bp:positionStatus rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EQUAL</bp:positionStatus>
+  </bp:SequenceSite>
+  <bp:UnificationXref rdf:ID="UnificationXref26">
+    <bp:db rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Reactome Database ID Release 84</bp:db>
+    <bp:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5660932</bp:id>
+    <bp:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Database identifier. Use this URL to connect to the web page of this instance in Reactome: http://www.reactome.org/cgi-bin/eventbrowser?DB=gk_current&amp;ID=5660932</bp:comment>
+  </bp:UnificationXref>
+  <bp:UnificationXref rdf:ID="UnificationXref27">
+    <bp:db rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Reactome</bp:db>
+    <bp:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">R-HSA-5660932</bp:id>
+    <bp:idVersion rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1</bp:idVersion>
+    <bp:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Reactome stable identifier. Use this URL to connect to the web page of this instance in Reactome: http://www.reactome.org/cgi-bin/eventbrowser_st_id?ST_ID=R-HSA-5660932.1</bp:comment>
+  </bp:UnificationXref>
+  <bp:Protein rdf:ID="Protein6">
+    <bp:displayName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SLC7A7 T299Ifs*10</bp:displayName>
+    <bp:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Y+L amino acid transporter 1</bp:name>
+    <bp:cellularLocation rdf:resource="#CellularLocationVocabulary3" />
+    <bp:entityReference rdf:resource="#ProteinReference2" />
+    <bp:feature rdf:resource="#ModificationFeature4" />
+    <bp:feature rdf:resource="#FragmentFeature5" />
+    <bp:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Reactome DB_ID: 5660949</bp:comment>
+    <bp:xref rdf:resource="#UnificationXref28" />
+    <bp:xref rdf:resource="#UnificationXref29" />
+    <bp:dataSource rdf:resource="#Provenance1" />
+  </bp:Protein>
+  <bp:ModificationFeature rdf:ID="ModificationFeature4">
+    <bp:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Replacement of residues 299 to 307</bp:comment>
+  </bp:ModificationFeature>
+  <bp:FragmentFeature rdf:ID="FragmentFeature5">
+    <bp:featureLocation rdf:resource="#SequenceInterval5" />
+  </bp:FragmentFeature>
+  <bp:SequenceInterval rdf:ID="SequenceInterval5">
+    <bp:sequenceIntervalBegin rdf:resource="#SequenceSite12" />
+    <bp:sequenceIntervalEnd rdf:resource="#SequenceSite13" />
+  </bp:SequenceInterval>
+  <bp:SequenceSite rdf:ID="SequenceSite12">
+    <bp:sequencePosition rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</bp:sequencePosition>
+    <bp:positionStatus rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EQUAL</bp:positionStatus>
+  </bp:SequenceSite>
+  <bp:SequenceSite rdf:ID="SequenceSite13">
+    <bp:sequencePosition rdf:datatype="http://www.w3.org/2001/XMLSchema#int">511</bp:sequencePosition>
+    <bp:positionStatus rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EQUAL</bp:positionStatus>
+  </bp:SequenceSite>
+  <bp:UnificationXref rdf:ID="UnificationXref28">
+    <bp:db rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Reactome Database ID Release 84</bp:db>
+    <bp:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5660949</bp:id>
+    <bp:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Database identifier. Use this URL to connect to the web page of this instance in Reactome: http://www.reactome.org/cgi-bin/eventbrowser?DB=gk_current&amp;ID=5660949</bp:comment>
+  </bp:UnificationXref>
+  <bp:UnificationXref rdf:ID="UnificationXref29">
+    <bp:db rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Reactome</bp:db>
+    <bp:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">R-HSA-5660949</bp:id>
+    <bp:idVersion rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1</bp:idVersion>
+    <bp:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Reactome stable identifier. Use this URL to connect to the web page of this instance in Reactome: http://www.reactome.org/cgi-bin/eventbrowser_st_id?ST_ID=R-HSA-5660949.1</bp:comment>
+  </bp:UnificationXref>
+  <bp:Protein rdf:ID="Protein7">
+    <bp:displayName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SLC7A7 W242*</bp:displayName>
+    <bp:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Y+L amino acid transporter 1</bp:name>
+    <bp:cellularLocation rdf:resource="#CellularLocationVocabulary3" />
+    <bp:entityReference rdf:resource="#ProteinReference2" />
+    <bp:feature rdf:resource="#ModificationFeature5" />
+    <bp:feature rdf:resource="#FragmentFeature6" />
+    <bp:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Reactome DB_ID: 5660850</bp:comment>
+    <bp:xref rdf:resource="#UnificationXref31" />
+    <bp:xref rdf:resource="#UnificationXref32" />
+    <bp:dataSource rdf:resource="#Provenance1" />
+  </bp:Protein>
+  <bp:ModificationFeature rdf:ID="ModificationFeature5">
+    <bp:featureLocation rdf:resource="#SequenceSite14" />
+    <bp:modificationType rdf:resource="#SequenceModificationVocabulary4" />
+  </bp:ModificationFeature>
+  <bp:SequenceSite rdf:ID="SequenceSite14">
+    <bp:sequencePosition rdf:datatype="http://www.w3.org/2001/XMLSchema#int">242</bp:sequencePosition>
+    <bp:positionStatus rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EQUAL</bp:positionStatus>
+  </bp:SequenceSite>
+  <bp:SequenceModificationVocabulary rdf:ID="SequenceModificationVocabulary4">
+    <bp:term rdf:datatype="http://www.w3.org/2001/XMLSchema#string">L-tryptophan removal</bp:term>
+    <bp:xref rdf:resource="#UnificationXref30" />
+  </bp:SequenceModificationVocabulary>
+  <bp:UnificationXref rdf:ID="UnificationXref30">
+    <bp:db rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MOD</bp:db>
+    <bp:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MOD:01648</bp:id>
+  </bp:UnificationXref>
+  <bp:FragmentFeature rdf:ID="FragmentFeature6">
+    <bp:featureLocation rdf:resource="#SequenceInterval6" />
+  </bp:FragmentFeature>
+  <bp:SequenceInterval rdf:ID="SequenceInterval6">
+    <bp:sequenceIntervalBegin rdf:resource="#SequenceSite15" />
+    <bp:sequenceIntervalEnd rdf:resource="#SequenceSite16" />
+  </bp:SequenceInterval>
+  <bp:SequenceSite rdf:ID="SequenceSite15">
+    <bp:sequencePosition rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</bp:sequencePosition>
+    <bp:positionStatus rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EQUAL</bp:positionStatus>
+  </bp:SequenceSite>
+  <bp:SequenceSite rdf:ID="SequenceSite16">
+    <bp:sequencePosition rdf:datatype="http://www.w3.org/2001/XMLSchema#int">511</bp:sequencePosition>
+    <bp:positionStatus rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EQUAL</bp:positionStatus>
+  </bp:SequenceSite>
+  <bp:UnificationXref rdf:ID="UnificationXref31">
+    <bp:db rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Reactome Database ID Release 84</bp:db>
+    <bp:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5660850</bp:id>
+    <bp:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Database identifier. Use this URL to connect to the web page of this instance in Reactome: http://www.reactome.org/cgi-bin/eventbrowser?DB=gk_current&amp;ID=5660850</bp:comment>
+  </bp:UnificationXref>
+  <bp:UnificationXref rdf:ID="UnificationXref32">
+    <bp:db rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Reactome</bp:db>
+    <bp:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">R-HSA-5660850</bp:id>
+    <bp:idVersion rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1</bp:idVersion>
+    <bp:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Reactome stable identifier. Use this URL to connect to the web page of this instance in Reactome: http://www.reactome.org/cgi-bin/eventbrowser_st_id?ST_ID=R-HSA-5660850.1</bp:comment>
+  </bp:UnificationXref>
+  <bp:Protein rdf:ID="Protein8">
+    <bp:displayName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SLC7A7 Y457*</bp:displayName>
+    <bp:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Y+L amino acid transporter 1</bp:name>
+    <bp:cellularLocation rdf:resource="#CellularLocationVocabulary3" />
+    <bp:entityReference rdf:resource="#ProteinReference2" />
+    <bp:feature rdf:resource="#ModificationFeature6" />
+    <bp:feature rdf:resource="#FragmentFeature7" />
+    <bp:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Reactome DB_ID: 5660952</bp:comment>
+    <bp:xref rdf:resource="#UnificationXref34" />
+    <bp:xref rdf:resource="#UnificationXref35" />
+    <bp:dataSource rdf:resource="#Provenance1" />
+  </bp:Protein>
+  <bp:ModificationFeature rdf:ID="ModificationFeature6">
+    <bp:featureLocation rdf:resource="#SequenceSite17" />
+    <bp:modificationType rdf:resource="#SequenceModificationVocabulary5" />
+  </bp:ModificationFeature>
+  <bp:SequenceSite rdf:ID="SequenceSite17">
+    <bp:sequencePosition rdf:datatype="http://www.w3.org/2001/XMLSchema#int">457</bp:sequencePosition>
+    <bp:positionStatus rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EQUAL</bp:positionStatus>
+  </bp:SequenceSite>
+  <bp:SequenceModificationVocabulary rdf:ID="SequenceModificationVocabulary5">
+    <bp:term rdf:datatype="http://www.w3.org/2001/XMLSchema#string">L-tyrosine removal</bp:term>
+    <bp:xref rdf:resource="#UnificationXref33" />
+  </bp:SequenceModificationVocabulary>
+  <bp:UnificationXref rdf:ID="UnificationXref33">
+    <bp:db rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MOD</bp:db>
+    <bp:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MOD:01649</bp:id>
+  </bp:UnificationXref>
+  <bp:FragmentFeature rdf:ID="FragmentFeature7">
+    <bp:featureLocation rdf:resource="#SequenceInterval7" />
+  </bp:FragmentFeature>
+  <bp:SequenceInterval rdf:ID="SequenceInterval7">
+    <bp:sequenceIntervalBegin rdf:resource="#SequenceSite18" />
+    <bp:sequenceIntervalEnd rdf:resource="#SequenceSite19" />
+  </bp:SequenceInterval>
+  <bp:SequenceSite rdf:ID="SequenceSite18">
+    <bp:sequencePosition rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</bp:sequencePosition>
+    <bp:positionStatus rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EQUAL</bp:positionStatus>
+  </bp:SequenceSite>
+  <bp:SequenceSite rdf:ID="SequenceSite19">
+    <bp:sequencePosition rdf:datatype="http://www.w3.org/2001/XMLSchema#int">511</bp:sequencePosition>
+    <bp:positionStatus rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EQUAL</bp:positionStatus>
+  </bp:SequenceSite>
+  <bp:UnificationXref rdf:ID="UnificationXref34">
+    <bp:db rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Reactome Database ID Release 84</bp:db>
+    <bp:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5660952</bp:id>
+    <bp:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Database identifier. Use this URL to connect to the web page of this instance in Reactome: http://www.reactome.org/cgi-bin/eventbrowser?DB=gk_current&amp;ID=5660952</bp:comment>
+  </bp:UnificationXref>
+  <bp:UnificationXref rdf:ID="UnificationXref35">
+    <bp:db rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Reactome</bp:db>
+    <bp:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">R-HSA-5660952</bp:id>
+    <bp:idVersion rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1</bp:idVersion>
+    <bp:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Reactome stable identifier. Use this URL to connect to the web page of this instance in Reactome: http://www.reactome.org/cgi-bin/eventbrowser_st_id?ST_ID=R-HSA-5660952.1</bp:comment>
+  </bp:UnificationXref>
+  <bp:UnificationXref rdf:ID="UnificationXref36">
+    <bp:db rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Reactome Database ID Release 84</bp:db>
+    <bp:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5660894</bp:id>
+    <bp:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Database identifier. Use this URL to connect to the web page of this instance in Reactome: http://www.reactome.org/cgi-bin/eventbrowser?DB=gk_current&amp;ID=5660894</bp:comment>
+  </bp:UnificationXref>
+  <bp:UnificationXref rdf:ID="UnificationXref37">
+    <bp:db rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Reactome</bp:db>
+    <bp:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">R-HSA-5660894</bp:id>
+    <bp:idVersion rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1</bp:idVersion>
+    <bp:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Reactome stable identifier. Use this URL to connect to the web page of this instance in Reactome: http://www.reactome.org/cgi-bin/eventbrowser_st_id?ST_ID=R-HSA-5660894.1</bp:comment>
+  </bp:UnificationXref>
+  <bp:Stoichiometry rdf:ID="Stoichiometry2">
+    <bp:stoichiometricCoefficient rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1</bp:stoichiometricCoefficient>
+    <bp:physicalEntity rdf:resource="#Protein2" />
+  </bp:Stoichiometry>
+  <bp:UnificationXref rdf:ID="UnificationXref38">
+    <bp:db rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Reactome Database ID Release 84</bp:db>
+    <bp:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">9631849</bp:id>
+    <bp:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Database identifier. Use this URL to connect to the web page of this instance in Reactome: http://www.reactome.org/cgi-bin/eventbrowser?DB=gk_current&amp;ID=9631849</bp:comment>
+  </bp:UnificationXref>
+  <bp:UnificationXref rdf:ID="UnificationXref39">
+    <bp:db rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Reactome</bp:db>
+    <bp:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">R-HSA-9631849</bp:id>
+    <bp:idVersion rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1</bp:idVersion>
+    <bp:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Reactome stable identifier. Use this URL to connect to the web page of this instance in Reactome: http://www.reactome.org/cgi-bin/eventbrowser_st_id?ST_ID=R-HSA-9631849.1</bp:comment>
+  </bp:UnificationXref>
+  <bp:RelationshipXref rdf:ID="RelationshipXref4">
+    <bp:db rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GENE ONTOLOGY</bp:db>
+    <bp:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GO:0015171</bp:id>
+    <bp:relationshipType rdf:resource="#RelationshipTypeVocabulary2" />
+  </bp:RelationshipXref>
+  <bp:RelationshipTypeVocabulary rdf:ID="RelationshipTypeVocabulary2">
+    <bp:term rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gene ontology term for cellular function</bp:term>
+    <bp:xref rdf:resource="#UnificationXref40" />
+  </bp:RelationshipTypeVocabulary>
+  <bp:UnificationXref rdf:ID="UnificationXref40">
+    <bp:db rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MI</bp:db>
+    <bp:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MI:0355</bp:id>
+  </bp:UnificationXref>
+  <bp:RelationshipTypeVocabulary rdf:ID="RelationshipTypeVocabulary3">
+    <bp:term rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Same Catalyst Activity</bp:term>
+  </bp:RelationshipTypeVocabulary>
+  <bp:RelationshipXref rdf:ID="RelationshipXref5">
+    <bp:db rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Reactome Database ID Release 84</bp:db>
+    <bp:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">9631923</bp:id>
+    <bp:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Database identifier. Use this URL to connect to the web page of this instance in Reactome: http://www.reactome.org/cgi-bin/eventbrowser?DB=gk_current&amp;ID=9631923</bp:comment>
+    <bp:relationshipType rdf:resource="#RelationshipTypeVocabulary3" />
+  </bp:RelationshipXref>
+  <bp:UnificationXref rdf:ID="UnificationXref41">
+    <bp:db rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Reactome Database ID Release 84</bp:db>
+    <bp:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5660910</bp:id>
+    <bp:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Database identifier. Use this URL to connect to the web page of this instance in Reactome: http://www.reactome.org/cgi-bin/eventbrowser?DB=gk_current&amp;ID=5660910</bp:comment>
+  </bp:UnificationXref>
+  <bp:UnificationXref rdf:ID="UnificationXref42">
+    <bp:db rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Reactome</bp:db>
+    <bp:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">R-HSA-5660910</bp:id>
+    <bp:idVersion rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2</bp:idVersion>
+    <bp:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Reactome stable identifier. Use this URL to connect to the web page of this instance in Reactome: http://www.reactome.org/cgi-bin/eventbrowser_st_id?ST_ID=R-HSA-5660910.2</bp:comment>
+  </bp:UnificationXref>
+  <bp:PublicationXref rdf:ID="PublicationXref1">
+    <bp:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">10080183</bp:id>
+    <bp:db rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pubmed</bp:db>
+    <bp:year rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1999</bp:year>
+    <bp:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SLC7A7, encoding a putative permease-related protein, is mutated in patients with lysinuric protein intolerance</bp:title>
+    <bp:author rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Borsani, G</bp:author>
+    <bp:author rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bassi, M T</bp:author>
+    <bp:author rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sperandeo, M P</bp:author>
+    <bp:author rdf:datatype="http://www.w3.org/2001/XMLSchema#string">De Grandi, A</bp:author>
+    <bp:author rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Buoninconti, A</bp:author>
+    <bp:author rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Riboni, M</bp:author>
+    <bp:author rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Manzoni, M</bp:author>
+    <bp:author rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Incerti, B</bp:author>
+    <bp:author rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pepe, A</bp:author>
+    <bp:author rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Andria, G</bp:author>
+    <bp:author rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ballabio, A</bp:author>
+    <bp:author rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sebastio, Gianfranco</bp:author>
+    <bp:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nat. Genet. 21:297-301</bp:source>
+  </bp:PublicationXref>
+  <bp:PublicationXref rdf:ID="PublicationXref2">
+    <bp:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">15776427</bp:id>
+    <bp:db rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pubmed</bp:db>
+    <bp:year rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2005</bp:year>
+    <bp:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lysinuric protein intolerance: identification and functional analysis of mutations of the SLC7A7 gene</bp:title>
+    <bp:author rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sperandeo, Maria Pia</bp:author>
+    <bp:author rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Annunziata, Patrizia</bp:author>
+    <bp:author rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ammendola, Virginia</bp:author>
+    <bp:author rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fiorito, Valentina</bp:author>
+    <bp:author rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pepe, Antonio</bp:author>
+    <bp:author rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Soldovieri, Maria Virginia</bp:author>
+    <bp:author rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Taglialatela, Maurizio</bp:author>
+    <bp:author rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Andria, G</bp:author>
+    <bp:author rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sebastio, Gianfranco</bp:author>
+    <bp:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hum. Mutat. 25:410</bp:source>
+  </bp:PublicationXref>
+  <bp:PublicationXref rdf:ID="PublicationXref3">
+    <bp:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">10631139</bp:id>
+    <bp:db rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pubmed</bp:db>
+    <bp:year rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2000</bp:year>
+    <bp:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Structure of the SLC7A7 gene and mutational analysis of patients affected by lysinuric protein intolerance</bp:title>
+    <bp:author rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sperandeo, M P</bp:author>
+    <bp:author rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bassi, M T</bp:author>
+    <bp:author rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Riboni, M</bp:author>
+    <bp:author rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Parenti, G</bp:author>
+    <bp:author rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Buoninconti, A</bp:author>
+    <bp:author rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Manzoni, M</bp:author>
+    <bp:author rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Incerti, B</bp:author>
+    <bp:author rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Larocca, M R</bp:author>
+    <bp:author rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Di Rocco, M</bp:author>
+    <bp:author rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Strisciuglio, P</bp:author>
+    <bp:author rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dianzani, I</bp:author>
+    <bp:author rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Parini, R</bp:author>
+    <bp:author rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Candito, M</bp:author>
+    <bp:author rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Endo, F</bp:author>
+    <bp:author rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ballabio, A</bp:author>
+    <bp:author rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Andria, G</bp:author>
+    <bp:author rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sebastio, Gianfranco</bp:author>
+    <bp:author rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Borsani, G</bp:author>
+    <bp:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Am. J. Hum. Genet. 66:92-9</bp:source>
+  </bp:PublicationXref>
+  <bp:PublicationXref rdf:ID="PublicationXref4">
+    <bp:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">10080182</bp:id>
+    <bp:db rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pubmed</bp:db>
+    <bp:year rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1999</bp:year>
+    <bp:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Identification of SLC7A7, encoding y+LAT-1, as the lysinuric protein intolerance gene</bp:title>
+    <bp:author rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Torrents, D</bp:author>
+    <bp:author rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mykkänen, J</bp:author>
+    <bp:author rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pineda, M</bp:author>
+    <bp:author rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Feliubadaló, L</bp:author>
+    <bp:author rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Estévez, R</bp:author>
+    <bp:author rdf:datatype="http://www.w3.org/2001/XMLSchema#string">de Cid, R</bp:author>
+    <bp:author rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sanjurjo, P</bp:author>
+    <bp:author rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Zorzano, A</bp:author>
+    <bp:author rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nunes, V</bp:author>
+    <bp:author rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Huoponen, K</bp:author>
+    <bp:author rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Reinikainen, A</bp:author>
+    <bp:author rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Simell, O</bp:author>
+    <bp:author rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Savontaus, M L</bp:author>
+    <bp:author rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Aula, P</bp:author>
+    <bp:author rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Palacin, M</bp:author>
+    <bp:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nat. Genet. 21:293-6</bp:source>
+  </bp:PublicationXref>
+  <bp:PathwayStep rdf:ID="PathwayStep1">
+    <bp:stepProcess rdf:resource="#BiochemicalReaction1" />
+    <bp:stepProcess rdf:resource="#Catalysis1" />
+  </bp:PathwayStep>
+  <bp:UnificationXref rdf:ID="UnificationXref43">
+    <bp:db rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Reactome Database ID Release 84</bp:db>
+    <bp:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5660862</bp:id>
+    <bp:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Database identifier. Use this URL to connect to the web page of this instance in Reactome: http://www.reactome.org/cgi-bin/eventbrowser?DB=gk_current&amp;ID=5660862</bp:comment>
+  </bp:UnificationXref>
+  <bp:UnificationXref rdf:ID="UnificationXref44">
+    <bp:db rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Reactome</bp:db>
+    <bp:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">R-HSA-5660862</bp:id>
+    <bp:idVersion rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1</bp:idVersion>
+    <bp:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Reactome stable identifier. Use this URL to connect to the web page of this instance in Reactome: http://www.reactome.org/cgi-bin/eventbrowser_st_id?ST_ID=R-HSA-5660862.1</bp:comment>
+  </bp:UnificationXref>
+  <bp:PublicationXref rdf:ID="PublicationXref5">
+    <bp:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">21308987</bp:id>
+    <bp:db rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pubmed</bp:db>
+    <bp:year rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2011</bp:year>
+    <bp:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lysinuric protein intolerance: reviewing concepts on a multisystem disease</bp:title>
+    <bp:author rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sebastio, Gianfranco</bp:author>
+    <bp:author rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sperandeo, Maria P</bp:author>
+    <bp:author rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Andria, G</bp:author>
+    <bp:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Am J Med Genet C Semin Med Genet 157:54-62</bp:source>
+  </bp:PublicationXref>
+  <bp:PublicationXref rdf:ID="PublicationXref6">
+    <bp:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">23177982</bp:id>
+    <bp:db rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pubmed</bp:db>
+    <bp:year rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2012</bp:year>
+    <bp:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Amino acid secondary transporters: toward a common transport mechanism</bp:title>
+    <bp:author rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Schweikhard, Eva S</bp:author>
+    <bp:author rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ziegler, Christine M</bp:author>
+    <bp:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Curr Top Membr 70:1-28</bp:source>
+  </bp:PublicationXref>
+  <bp:PublicationXref rdf:ID="PublicationXref7">
+    <bp:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">17764084</bp:id>
+    <bp:db rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pubmed</bp:db>
+    <bp:year rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2008</bp:year>
+    <bp:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lysinuric protein intolerance: update and extended mutation analysis of the SLC7A7 gene</bp:title>
+    <bp:author rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sperandeo, Maria Pia</bp:author>
+    <bp:author rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Andria, G</bp:author>
+    <bp:author rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sebastio, Gianfranco</bp:author>
+    <bp:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hum. Mutat. 29:14-21</bp:source>
+  </bp:PublicationXref>
+</rdf:RDF>
+
