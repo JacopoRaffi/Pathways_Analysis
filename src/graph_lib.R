@@ -39,4 +39,22 @@ biopax2igraph <- function(file_name){
   return(ig)   
 }
 
+folder_to_graph <- function(dir_name){
+  files = list.files(dir_name, full.names = TRUE) #ottengo la lista di file biopax (path relativi)
+  
+  fullgraph = biopax2igraph(files[1])
+  
+  for(i in 2:length(files)){
+      fullgraph = fullgraph %u% biopax2igraph(files[i]) 
+  }
+  
+  return(fullgraph)
+}
+  
+  #fondiamo i nodi con lo stesso nome mantenendo una sola occorrenza per quel nome
+  ig = contract(ig, ids, vertex.attr.comb = list(name="first"))
+  
+  return(ig)   
+}
+
 #plot.igraph(ig, edge.arrow.width = 0.1, edge.arrow.size = 0.1, vertex.size = 10, vertex.label.cex = 0.6)
