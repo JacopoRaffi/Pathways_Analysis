@@ -21,15 +21,15 @@ biopax2igraph <- function(file_name){
   
   names = V(ig)$name #vettore dei nomi dei nodi del grafo
   ids = c(1) #vettore dei futuri id del grafo
-  sub_num = 0 #conteggio numero sostituzioni
+  last_i_used = 1 #conteggio numero sostituzioni
   
   for(i in 2:length(names)){
     if(names[i] %in% names[1:i-1]){ #nome del node già incontrato
-      sub_num = sub_num + 1 
-      ids = append(ids, match(names[i], names[1:i-1])) #inseriamo id del nodo già incontrato
+      ids = append(ids, ids[match(names[i], names[1:i-1])]) #inseriamo id del nodo già incontrato
     }
     else{
-      ids = append(ids, i - sub_num) #inseriamo id corretto secondo la progressione
+      last_i_used = last_i_used + 1
+      ids = append(ids, last_i_used) #inseriamo id corretto secondo la progressione
     }
   }
   
@@ -45,16 +45,11 @@ folder_to_graph <- function(dir_name){
   fullgraph = biopax2igraph(files[1])
   
   for(i in 2:length(files)){
+    biopax2igraph(files[i]) 
+      print(files[i])
       fullgraph = fullgraph %u% biopax2igraph(files[i]) 
   }
   
   return(fullgraph)
 }
-  
-  #fondiamo i nodi con lo stesso nome mantenendo una sola occorrenza per quel nome
-  ig = contract(ig, ids, vertex.attr.comb = list(name="first"))
-  
-  return(ig)   
-}
 
-#plot.igraph(ig, edge.arrow.width = 0.1, edge.arrow.size = 0.1, vertex.size = 10, vertex.label.cex = 0.6)
