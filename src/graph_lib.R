@@ -39,17 +39,44 @@ biopax2igraph <- function(file_name){
   return(ig)   
 }
 
-folder_to_graph <- function(dir_name){
+folder2igraph <- function(dir_name){
   files = list.files(dir_name, full.names = TRUE) #ottengo la lista di file biopax (path relativi)
   
   fullgraph = biopax2igraph(files[1])
   
   for(i in 2:length(files)){
     biopax2igraph(files[i]) 
-      print(files[i])
       fullgraph = fullgraph %u% biopax2igraph(files[i]) 
   }
   
   return(fullgraph)
 }
 
+csv2igraph <- function(file_name){
+  data = read.csv2(file_name)#leggo file csv
+  
+  targets = data$Targets #prendo i target della medicina
+  graph_vect = c()
+  
+  #creo il vettore degli archi
+  for(i in 1:length(targets)){
+    graph_vect = append(graph_vect, c(data$Name[1], targets[i]))
+  }
+  
+  ig = make_graph(graph_vect)
+  
+  return(ig)
+}
+
+foldercsv2igraph <- function(dir_name){
+  files = list.files(dir_name, full.names = TRUE) #ottengo la lista di file csv (path relativi)
+  
+  fullgraph = csv2igraph(files[1])
+  
+  for(i in 2:length(files)){
+    csv2igraph(files[i]) 
+    fullgraph = fullgraph %u% csv2igraph(files[i]) 
+  }
+  
+  return(fullgraph)
+}
