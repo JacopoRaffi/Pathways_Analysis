@@ -8,7 +8,7 @@ biopax2igraph <- function(file_name){
   df = bp$dt #dataframe of BioPax model (dataframe completo)
   df_dn = df[df$property == "displayName"] #df con solo i displayName
   
-  g = pathway2Graph(bp, "Pathway1", useIDasNodenames = FALSE, verbose = FALSE)
+  g = pathway2Graph(bp, "Pathway1", useIDasNodenames = FALSE, verbose = FALSE, splitComplexMolecules = TRUE)
   
   ig = graph_from_graphnel(g, name = TRUE) #grafo estratto dal pathway (igraph)
   
@@ -52,31 +52,40 @@ folder2igraph <- function(dir_name){
   return(fullgraph)
 }
 
-csv2igraph <- function(file_name){
-  data = read.csv2(file_name)#leggo file csv
+csv2igraph <- function(file_name, file_dict){
+  data = read.csv(file_name)
+  genes = data$GenBank.Gene.ID
+  prots = data$UniProt.ID
+  drugs_ids = data$Drug.IDs
+  edges = c()
   
-  targets = data$Targets #prendo i target della medicina
-  graph_vect = c()
-  
-  #creo il vettore degli archi
-  for(i in 1:length(targets)){
-    graph_vect = append(graph_vect, c(data$Name[1], targets[i]))
+  for(i in 1:length(genes)){
+    drugs = strsplit(drugs_ids, "; ")[[1]]
+    uniprot = prots[i]
+    
+    if(!(genes[i] == "")){
+      for(j in length(drugs)){
+        edges = append(edges, drugs[j])
+        edges = append(edges, genes[i])
+        #edges = append(edges, c(drugs[j], genes[i]))
+        if (uniprot != ""){
+          edges = append(edges, genes[i])
+          edges = append(edges, uniprot)
+        } 
+          #edges = append(edges, c(genes[i], uniprot))
+      }
+    }
+    else{
+      for(j in length(drugs)){
+        if (uniprot != ""){
+          edges = append(edges, drugs[j])
+          edges = append(edges, uniprot)
+        } 
+          #edges = append(edges, c(drugs[j], uniprot))
+      }
+    }
   }
-  
-  ig = make_graph(graph_vect)
+  ig = make_graph(edges)
   
   return(ig)
-}
-
-foldercsv2igraph <- function(dir_name){
-  files = list.files(dir_name, full.names = TRUE) #ottengo la lista di file csv (path relativi)
-  
-  fullgraph = csv2igraph(files[1])
-  
-  for(i in 2:length(files)){
-    csv2igraph(files[i]) 
-    fullgraph = fullgraph %u% csv2igraph(files[i]) 
-  }
-  
-  return(fullgraph)
 }
