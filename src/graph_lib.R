@@ -89,3 +89,47 @@ csv2igraph <- function(file_name, file_dict){
   
   return(ig)
 }
+
+splitComplexes <- function(biopax){
+  complexes = biopax$dt[biopax$dt$class == "Complex"]
+  complex_ids = unique(complexes$id)
+  
+  all_complex_components = list()
+  
+  for(i in 1:length(complex_ids)){
+    components = c()
+    df = splitComplex(biopax, complex_ids[i])
+    ids = df$id
+    for(j in 1:length(ids)){
+      if(startsWith(ids[j], "Protein")){
+        prot_df = biopax$dt[biopax$dt$id == ids[j]]
+        prot_ref = sub("#", "", prot_df[prot_df$property == "entityReference"]$property_attr_value)
+        
+        prot_ref_df = biopax$dt[biopax$dt$id == prot_ref]
+        uniprot_gene = prot_ref_df$property_value[startsWith(prot_ref_df$property_value, "UniProt")]
+        
+        uniprot_gene = sub("UniProt:", "", uniprot_gene)
+        parts = strsplit(uniprot_gene, " ")[[1]]
+        
+        uniprotID = parts[1]
+        gene = parts[2]
+        components = append(components, c(gene, uniprotID))
+      }
+      else{
+        components = append(components, df[df$id == ids[j]]$name)
+      }
+    }
+    
+    all_complex_components[[i]] = components
+  }
+  
+  return(all_complex_components)
+}
+
+splitNode <- function(file_name){
+  biopax = readBiopax(file_name)
+  
+  complexes_components = splitComplexes(biopax)
+  complexes = biopax$dt[biopax$dt$class == "Complex"]
+  complex_names = complexes[complexes$property == "displayName"]$property_value 
+}
