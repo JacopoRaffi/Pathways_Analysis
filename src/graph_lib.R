@@ -45,32 +45,33 @@ csv2igraph <- function(file_name, file_dict){
   edges = c()
   
   for(i in 1:length(genes)){
-    drugs = strsplit(drugs_ids, "; ")[[1]]
+    drugs = strsplit(drugs_ids[i], "; ")[[1]]
+    print(drugs)
     uniprot = prots[i]
     
     if(!(is.na(genes[i]))){
       if(!(genes[i] == "")){
-        for(j in length(drugs)){
+        for(j in 1:length(drugs)){
           edges = append(edges, drugs[j])
           edges = append(edges, genes[i])
           #edges = append(edges, c(drugs[j], genes[i]))
-          if (uniprot != ""){
-            edges = append(edges, genes[i])
-            edges = append(edges, uniprot)
-          } 
+          #if (uniprot != ""){
+          #  edges = append(edges, genes[i])
+          #  edges = append(edges, uniprot)
+          #} 
           #edges = append(edges, c(genes[i], uniprot))
         }
       }
     }
-    else{
-      for(j in length(drugs)){
+    #else{
+      for(j in 1:length(drugs)){
         if (uniprot != ""){
           edges = append(edges, drugs[j])
           edges = append(edges, uniprot)
         } 
           #edges = append(edges, c(drugs[j], uniprot))
       }
-    }
+    #}
   }
   ig = make_graph(edges)
   
@@ -193,6 +194,44 @@ splitFolderNodes <- function(graph, dir_name){
   return(graph)
 }
 
+interaction2igraph <- function(file_name){
+  df = read.csv(file_name)
+  
+  int_a = df$official_symbol_for_interactor_a
+  int_b = df$official_symbol_for_interactor_b
+  
+  edges = c()
+  
+  for(i in 1:length(int_a)){
+    print(paste0("INT1: ", i))
+    edges = append(edges, c(int_a[i], int_b[i]))
+  }
+  
+  ig = make_graph(edges)
+  
+  return(ig)
+}
+
+interaction2igraph2 <- function(file_name, gene_names){
+  df = read.csv(file_name, sep = "\t", header = TRUE)
+  
+  int_a = df$Official.Symbol.Interactor.A
+  int_b = df$Official.Symbol.Interactor.B
+  
+  edges = c()
+  
+  for(i in 1:length(int_a)){
+    print(paste0("INT2: ", i))
+    if(int_a[i] %in% gene_names | int_b[i] %in% gene_names){
+      edges = append(edges, c(int_a[i], int_b[i]))
+    }
+  }
+  
+  ig = make_graph(edges)
+  
+  return(ig)
+}
+
 contractNodes <- function(ig){
   vrtx = V(ig)
   
@@ -215,3 +254,44 @@ contractNodes <- function(ig){
   
   return(ig)
 }
+
+ranking <- function(ig, drugs, genes, directed){
+  m = "all"
+  if(directed)
+    m = "out"
+  
+  dist = distances(ig, v = drugs, to = genes, mode = m)
+  #columns: 1 -> drug_id ; 2 -> mean_distance; 3 -> rank; 4 -> percentage of drugs falling under this rank
+  means = matrix(nrow = length(drugs), ncol = 4)
+  
+  for(i in 1:nrow(dist)){
+    means[i,1] = drugs[i]
+    means[i,2] = mean(dist[i,])
+  }
+  
+  means = means[order(as.numeric(means[,2]), decreasing = FALSE),]
+  rank = 1
+  last_mean = means[1,2]
+  rows = nrow(means)
+  
+  for(i in 1:rows){
+    if(as.numeric(means[i,2]) > last_mean){
+      rank = rank + 1
+      last_mean = as.numeric(means[i,2])
+    }
+    means[i,3] = rank
+  }
+  
+  rank_percentage = c()
+  for(i in 1:rank){
+    rank_percentage = append(rank_percentage, round((nrow(means[as.numeric(means[,3]) > i,]) / rows) * 100, 2))
+  }
+  print(rank_percentage)
+  for(i in 1:rows){
+    means[i,4] = rank_percentage[as.numeric(means[i,3])]
+  }
+  
+  return (means);
+}
+  
+
