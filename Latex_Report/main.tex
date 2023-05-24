@@ -1,0 +1,67 @@
+\documentclass[12 pt ,a4 paper, openright, oneside]{book}
+% Pacchetti %
+\usepackage[utf8]{inputenc}
+\usepackage{csquotes}
+\usepackage{hyperref}
+\usepackage{subcaption}
+\usepackage[dvipsnames,table,xcdraw]{xcolor}
+\usepackage{algorithm}
+\usepackage{algpseudocode}
+\usepackage{hyphenat}
+\usepackage[hypcap=true]{caption}
+\usepackage{setspace}
+\usepackage[hang,flushmargin,bottom]{footmisc}
+\usepackage{todonotes} % Note Todo
+\usepackage{soul} % strikethrough 
+\usepackage{caption}
+\usepackage{placeins}
+\usepackage{amssymb,amsmath}
+\usepackage[official]{eurosym}
+\usepackage{frontespizio}
+\usepackage{booktabs}
+\usepackage{listings}
+\usepackage{titlesec}
+\titleformat{\chapter}[display]
+  {\normalfont\bfseries}{}{0pt}{\Huge}
+\renewcommand{\lstlistingname}{Codice}% Listing -> Codice
+\usepackage{mdframed}
+\def\checkmark{\tikz\fill[scale=0.4, color=ForestGreen](0,.35) -- (.25,0) -- (1,.7) -- (.25,.15) -- cycle;}
+\newcommand{\red}[1]{\textcolor{red}{#1}}
+\newcommand{\green}[1]{\textcolor{ForestGreen}{#1}}
+\usepackage{eurosym}
+% Tabelle %
+\usepackage[normalem]{ulem}
+\useunder{\uline}{\ul}{}
+\usepackage{array,ragged2e}
+\usepackage{colortbl}
+\newcolumntype{P}[1]{>{\RaggedRight\arraybackslash}p{#1}}
+
+% Immagini %
+\usepackage{graphicx, wrapfig, float, rotating}
+% \graphicspath{{images/}}
+
+% Bibliografia %
+\usepackage[backend=biber,style=numeric,sorting=none,maxbibnames=99]{biblatex}
+\addbibresource{Bibliografia.bib}
+
+\begin{document}
+
+% Qui ci andrà il frontespizio
+
+\include{frontespizio}
+
+% .. fine frontespizio
+
+% il capitolo inizia a pagina nuova. Usare il comando \input{} per aggiungere senza andare a pagina nuova
+\setstretch{1.0}
+\include{Introduction} 
+\include{Project Development}
+\include{Implementation}
+\include{Conclusions}
+
+% Mostra bibliografia
+\printbibliography[heading=bibintoc]
+
+%``"
+\end{document}
+
