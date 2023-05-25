@@ -14,8 +14,21 @@ This step resulted in the addition to the graph of nodes representing the 2220 d
 Each drug node has edges pointing to each of the targets of the specific drug it models, also represented by nodes in the graph. Finally, at the end of this step, as well as at the end of the production of the final complete graph, each node will represent a specific biological entity, unique in the whole graph and source of hedges, modelling every interaction known and useful for the research purpose, pointing to each of the nodes it interact with.
 
 \section{Graph enrichment and completion}
-%\section{Data processing and filtering}
+After integrating the drugs from ``Drugbank"\cite{drugbank}, it was necessary to complete and extend the data obtained so far; to achieve this, the core tool exploited in this phase is ``BioGRID"\cite{biogrid}. In particular, all interactions involving genes already present in the data from ``Reactome" were extracted. The data obtained are acquired by performing queries on the server, specifying the genes of interest, and using a  file (``BIOGRID-ORGANISM-Homo\_sapiens-4.4.221.tab3.txt"), containing all interactions in the human body, specifically filtered. 
+
+The choice to consider only these interactions is due to the desire not to consider overly long paths between drugs and disease components. In fact, if a drug interacted with a disease via too long paths, it would certainly be placed at the bottom of the ranking, so for research purposes it would not constitute a potential new drug.
+
 \section{Ranking algorithm}
+
+As the focus during development was more directed toward the study of data structures and results interpretation, the implementation of the algorithm for the calculation of rankings is based on a simple and basic approach. Nevertheless, however, the project produced interesting results that will be evaluated and validated in the next sections. 
+
+The implemented algorithm calculates, for each drug, the average distance that the node that models it in the graph has with respect to the various components of the disease under examination. This exploiting also the hereditary nature of the metabolic diseases, that permit the approximation on the components (represented by nodes) of those diseases as the genes which are in any sense involved in those diseases' pathways.
+
+%\begin{center}
+%\includegraphics[width=4cm]{Images/interactions.png}
+%\end{center}
+
+
 \section{Validation}
 After the analysis phase, a series of four validations were conducted: first a set of two qualitative validations and than another set of two statistical validations:
 \begin{itemize}
