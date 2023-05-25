@@ -4,6 +4,7 @@
 \usepackage{csquotes}
 \usepackage{hyperref}
 \usepackage{subcaption}
+\usepackage{subfig}
 \usepackage[dvipsnames,table,xcdraw]{xcolor}
 \usepackage{algorithm}
 \usepackage{algpseudocode}
@@ -21,8 +22,9 @@
 \usepackage{booktabs}
 \usepackage{listings}
 \usepackage{titlesec}
-\titleformat{\chapter}[display]
-  {\normalfont\bfseries}{}{0pt}{\Huge}
+\titleformat{\chapter}[hang]{\Huge\bfseries}{\thechapter{. }}{0pt}{\Huge\bfseries}
+%\titleformat{\chapter}[display]
+  %{\normalfont\bfseries}{}{0pt}{\Huge}
 \renewcommand{\lstlistingname}{Codice}% Listing -> Codice
 \usepackage{mdframed}
 \def\checkmark{\tikz\fill[scale=0.4, color=ForestGreen](0,.35) -- (.25,0) -- (1,.7) -- (.25,.15) -- cycle;}
@@ -57,6 +59,7 @@
 \include{Introduction} 
 \include{Project Development}
 \include{Implementation}
+\include{Resulting ranking visualization}
 \include{Conclusions}
 
 % Mostra bibliografia
