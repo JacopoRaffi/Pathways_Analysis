@@ -50,7 +50,6 @@ csv2igraph <- function(file_name, file_dict){
   
   for(i in 1:length(genes)){
     drugs = strsplit(drugs_ids[i], "; ")[[1]]
-    print(drugs)
     uniprot = prots[i]
     
     if(!(is.na(genes[i]))){
@@ -226,7 +225,6 @@ interaction2igraph2 <- function(file_name, gene_names){
   edges = c()
   
   for(i in 1:length(int_a)){
-    print(paste0("INT2: ", i))
     if(int_a[i] %in% gene_names | int_b[i] %in% gene_names){
       edges = append(edges, c(int_a[i], int_b[i]))
     }
@@ -372,7 +370,8 @@ test2Ranking <- function(akdv, arv){
     while (j <= 14){
       tmp = round(runif(1, 1, 2220))
       if(! (tmp %in% alreadyTaken)){
-        randomDrugs = append(randomDrugs, arv[[1]][tmp, 1]) 
+        randomDrugs = append(randomDrugs, arv[[1]][tmp, 1])
+        alreadyTaken = append(alreadyTaken, arv[[1]][tmp, 1])
         j = j + 1
       }
     }
@@ -387,8 +386,6 @@ test2Ranking <- function(akdv, arv){
       }
     }
   }
-  
-  print(rank3)
   
   test = t.test(rank1, rank3)
   return (test)

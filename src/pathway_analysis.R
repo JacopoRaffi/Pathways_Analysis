@@ -31,7 +31,6 @@ biogrid_df = as.data.frame(bg("interactions") %>%
                               bg_get_results())
 biogrid_df = as.data.frame(biogrid_df[gene_names[1] %in% biogrid_df$official_symbol_for_interactor_a || gene_names[1] %in% biogrid_df$official_symbol_for_interactor_b])
 for(i in 2:length(gene_names)){
-  print(paste0("BIOGRID query: ", i))
   tmp_df = as.data.frame(bg("interactions") %>% 
                                bg_constrain(geneList = gene_names[i]) %>% 
                                bg_get_results())
@@ -163,7 +162,6 @@ test1 = test1Ranking(akdv, arv)
 if(test1$p.value < 0.05) print("TEST 1 PASSED!")
 
 test2 = test2Ranking(akdv, arv)
-print(test2$p.value)
 if(test2$p.value < 0.05) print("TEST 2 PASSED!")
 
 
