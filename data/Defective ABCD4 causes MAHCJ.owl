@@ -1,0 +1,529 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" xml:base="http://www.reactome.org/biopax/84/5683329#">
+  <owl:Ontology rdf:about="">
+    <owl:imports rdf:resource="http://www.biopax.org/release/biopax-level3.owl" />
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BioPAX pathway converted from "Defective ABCD4 causes MAHCJ" in the Reactome database.</rdfs:comment>
+  </owl:Ontology>
+  <bp:Pathway rdf:ID="Pathway1">
+    <bp:pathwayComponent rdf:resource="#BiochemicalReaction1" />
+    <bp:pathwayOrder rdf:resource="#PathwayStep1" />
+    <bp:organism rdf:resource="#BioSource1" />
+    <bp:displayName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Defective ABCD4 causes MAHCJ</bp:displayName>
+    <bp:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Defective ABCD4 causes methylmalonic aciduria and homocystinuria, cblj type (MAHCJ)</bp:name>
+    <bp:xref rdf:resource="#UnificationXref33" />
+    <bp:xref rdf:resource="#UnificationXref34" />
+    <bp:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ATP-binding cassette sub-family D member 4 (ABCD4) is thought to mediate the lysosomal export of cobalamin (Cbl aka vitamin B12) into the cytosol, making it available for the production of Cbl cofactors. Cbl is an important cofactor for correct haematological and neurological functions. Defects in ABCD4 can cause methylmalonic aciduria and homocystinuria, cblJ type (MAHCJ; MIM:614857), a genetically heterogeneous metabolic disorder of Cbl metabolism characterised by decreased levels of the coenzymes adenosylcobalamin (AdoCbl) and methylcobalamin (MeCbl). Clinically, symptoms include feeding difficulties, poor growth, hypotonia, lethargy, anaemia and delayed development (Coelho et al. 2012).</bp:comment>
+    <bp:xref rdf:resource="#PublicationXref1" />
+    <bp:dataSource rdf:resource="#Provenance1" />
+    <bp:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Authored: Jassal, Bijay, 2015-03-13</bp:comment>
+    <bp:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Reviewed: Shukla, Suneet, 2015-09-15</bp:comment>
+    <bp:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Edited: Jassal, Bijay, 2015-03-13</bp:comment>
+  </bp:Pathway>
+  <bp:BiochemicalReaction rdf:ID="BiochemicalReaction1">
+    <bp:conversionDirection rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LEFT-TO-RIGHT</bp:conversionDirection>
+    <bp:left rdf:resource="#SmallMolecule1" />
+    <bp:left rdf:resource="#SmallMolecule2" />
+    <bp:left rdf:resource="#SmallMolecule3" />
+    <bp:eCNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string">7.6.2.8</bp:eCNumber>
+    <bp:displayName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Defective ABCD4:LMBRD1 does not transport Cbl from lysosomal lumen to cytosol</bp:displayName>
+    <bp:xref rdf:resource="#UnificationXref31" />
+    <bp:xref rdf:resource="#UnificationXref32" />
+    <bp:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ATP-binding cassette sub-family D member 4 (ABCD4) is thought to mediate the lysosomal export of cobalamin (Cbl aka vitamin B12) into the cytosol, making it available for the production of Cbl cofactors. Cbl is an important cofactor for correct haematological and neurological functions. Defects in ABCD4 can cause methylmalonic aciduria and homocystinuria, cblJ type (MAHCJ; MIM:614857), a genetically heterogeneous metabolic disorder of Cbl metabolism characterised by decreased levels of the coenzymes adenosylcobalamin (AdoCbl) and methylcobalamin (MeCbl). Clinically, symptoms include feeding difficulties, poor growth, hypotonia, lethargy, anaemia and delayed development. Mutations causing MAHCJ include Y319C and E583Lfs*9 (Coelho et al. 2012).</bp:comment>
+    <bp:xref rdf:resource="#PublicationXref1" />
+    <bp:dataSource rdf:resource="#Provenance1" />
+    <bp:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Authored: Jassal, Bijay, 2015-03-13</bp:comment>
+    <bp:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Reviewed: Shukla, Suneet, 2015-09-15</bp:comment>
+    <bp:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Edited: Jassal, Bijay, 2015-03-13</bp:comment>
+  </bp:BiochemicalReaction>
+  <bp:SmallMolecule rdf:ID="SmallMolecule1">
+    <bp:displayName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ATP</bp:displayName>
+    <bp:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Adenosine 5'-triphosphate</bp:name>
+    <bp:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ATP(4-)</bp:name>
+    <bp:cellularLocation rdf:resource="#CellularLocationVocabulary1" />
+    <bp:entityReference rdf:resource="#SmallMoleculeReference1" />
+    <bp:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Reactome DB_ID: 113592</bp:comment>
+    <bp:xref rdf:resource="#UnificationXref3" />
+    <bp:xref rdf:resource="#UnificationXref4" />
+    <bp:dataSource rdf:resource="#Provenance1" />
+    <bp:xref rdf:resource="#RelationshipXref1" />
+  </bp:SmallMolecule>
+  <bp:CellularLocationVocabulary rdf:ID="CellularLocationVocabulary1">
+    <bp:term rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cytosol</bp:term>
+    <bp:xref rdf:resource="#UnificationXref1" />
+  </bp:CellularLocationVocabulary>
+  <bp:UnificationXref rdf:ID="UnificationXref1">
+    <bp:db rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GENE ONTOLOGY</bp:db>
+    <bp:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GO:0005829</bp:id>
+  </bp:UnificationXref>
+  <bp:SmallMoleculeReference rdf:ID="SmallMoleculeReference1">
+    <bp:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ATP(4-) [ChEBI:30616]</bp:name>
+    <bp:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ATP(4-)</bp:name>
+    <bp:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ATP</bp:name>
+    <bp:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">atp</bp:name>
+    <bp:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Adenosine 5'-triphosphate</bp:name>
+    <bp:xref rdf:resource="#UnificationXref2" />
+  </bp:SmallMoleculeReference>
+  <bp:UnificationXref rdf:ID="UnificationXref2">
+    <bp:db rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ChEBI</bp:db>
+    <bp:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CHEBI:30616</bp:id>
+  </bp:UnificationXref>
+  <bp:UnificationXref rdf:ID="UnificationXref3">
+    <bp:db rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Reactome Database ID Release 84</bp:db>
+    <bp:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">113592</bp:id>
+    <bp:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Database identifier. Use this URL to connect to the web page of this instance in Reactome: http://www.reactome.org/cgi-bin/eventbrowser?DB=gk_current&amp;ID=113592</bp:comment>
+  </bp:UnificationXref>
+  <bp:UnificationXref rdf:ID="UnificationXref4">
+    <bp:db rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Reactome</bp:db>
+    <bp:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">R-ALL-113592</bp:id>
+    <bp:idVersion rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5</bp:idVersion>
+    <bp:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Reactome stable identifier. Use this URL to connect to the web page of this instance in Reactome: http://www.reactome.org/cgi-bin/eventbrowser_st_id?ST_ID=R-ALL-113592.5</bp:comment>
+  </bp:UnificationXref>
+  <bp:Provenance rdf:ID="Provenance1">
+    <bp:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Reactome</bp:name>
+    <bp:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.reactome.org</bp:comment>
+  </bp:Provenance>
+  <bp:RelationshipXref rdf:ID="RelationshipXref1">
+    <bp:relationshipType rdf:resource="#RelationshipTypeVocabulary1" />
+    <bp:db rdf:datatype="http://www.w3.org/2001/XMLSchema#string">COMPOUND</bp:db>
+    <bp:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C00002</bp:id>
+  </bp:RelationshipXref>
+  <bp:RelationshipTypeVocabulary rdf:ID="RelationshipTypeVocabulary1">
+    <bp:term rdf:datatype="http://www.w3.org/2001/XMLSchema#string">additional information</bp:term>
+    <bp:xref rdf:resource="#UnificationXref5" />
+  </bp:RelationshipTypeVocabulary>
+  <bp:UnificationXref rdf:ID="UnificationXref5">
+    <bp:db rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MI</bp:db>
+    <bp:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MI:0361</bp:id>
+  </bp:UnificationXref>
+  <bp:SmallMolecule rdf:ID="SmallMolecule2">
+    <bp:displayName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">H2O</bp:displayName>
+    <bp:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">water</bp:name>
+    <bp:cellularLocation rdf:resource="#CellularLocationVocabulary1" />
+    <bp:entityReference rdf:resource="#SmallMoleculeReference2" />
+    <bp:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Reactome DB_ID: 29356</bp:comment>
+    <bp:xref rdf:resource="#UnificationXref7" />
+    <bp:xref rdf:resource="#UnificationXref8" />
+    <bp:dataSource rdf:resource="#Provenance1" />
+    <bp:xref rdf:resource="#RelationshipXref2" />
+  </bp:SmallMolecule>
+  <bp:SmallMoleculeReference rdf:ID="SmallMoleculeReference2">
+    <bp:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">water [ChEBI:15377]</bp:name>
+    <bp:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">water</bp:name>
+    <bp:xref rdf:resource="#UnificationXref6" />
+  </bp:SmallMoleculeReference>
+  <bp:UnificationXref rdf:ID="UnificationXref6">
+    <bp:db rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ChEBI</bp:db>
+    <bp:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CHEBI:15377</bp:id>
+  </bp:UnificationXref>
+  <bp:UnificationXref rdf:ID="UnificationXref7">
+    <bp:db rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Reactome Database ID Release 84</bp:db>
+    <bp:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">29356</bp:id>
+    <bp:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Database identifier. Use this URL to connect to the web page of this instance in Reactome: http://www.reactome.org/cgi-bin/eventbrowser?DB=gk_current&amp;ID=29356</bp:comment>
+  </bp:UnificationXref>
+  <bp:UnificationXref rdf:ID="UnificationXref8">
+    <bp:db rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Reactome</bp:db>
+    <bp:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">R-ALL-29356</bp:id>
+    <bp:idVersion rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5</bp:idVersion>
+    <bp:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Reactome stable identifier. Use this URL to connect to the web page of this instance in Reactome: http://www.reactome.org/cgi-bin/eventbrowser_st_id?ST_ID=R-ALL-29356.5</bp:comment>
+  </bp:UnificationXref>
+  <bp:RelationshipXref rdf:ID="RelationshipXref2">
+    <bp:relationshipType rdf:resource="#RelationshipTypeVocabulary1" />
+    <bp:db rdf:datatype="http://www.w3.org/2001/XMLSchema#string">COMPOUND</bp:db>
+    <bp:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C00001</bp:id>
+  </bp:RelationshipXref>
+  <bp:SmallMolecule rdf:ID="SmallMolecule3">
+    <bp:displayName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cbl</bp:displayName>
+    <bp:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cobalamin</bp:name>
+    <bp:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cob(III)alamin</bp:name>
+    <bp:cellularLocation rdf:resource="#CellularLocationVocabulary2" />
+    <bp:entityReference rdf:resource="#SmallMoleculeReference3" />
+    <bp:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Reactome DB_ID: 3000239</bp:comment>
+    <bp:xref rdf:resource="#UnificationXref11" />
+    <bp:xref rdf:resource="#UnificationXref12" />
+    <bp:dataSource rdf:resource="#Provenance1" />
+  </bp:SmallMolecule>
+  <bp:CellularLocationVocabulary rdf:ID="CellularLocationVocabulary2">
+    <bp:term rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lysosomal lumen</bp:term>
+    <bp:xref rdf:resource="#UnificationXref9" />
+  </bp:CellularLocationVocabulary>
+  <bp:UnificationXref rdf:ID="UnificationXref9">
+    <bp:db rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GENE ONTOLOGY</bp:db>
+    <bp:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GO:0043202</bp:id>
+  </bp:UnificationXref>
+  <bp:SmallMoleculeReference rdf:ID="SmallMoleculeReference3">
+    <bp:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cob(III)alamin [ChEBI:28911]</bp:name>
+    <bp:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cob(III)alamin</bp:name>
+    <bp:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cobalamin(III)</bp:name>
+    <bp:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cbl</bp:name>
+    <bp:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cobalamin(1+)</bp:name>
+    <bp:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">alpha-(5,6-dimethylbenzimidazolyl)cobamide</bp:name>
+    <bp:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cobalamin (III)</bp:name>
+    <bp:xref rdf:resource="#UnificationXref10" />
+  </bp:SmallMoleculeReference>
+  <bp:UnificationXref rdf:ID="UnificationXref10">
+    <bp:db rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ChEBI</bp:db>
+    <bp:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CHEBI:28911</bp:id>
+  </bp:UnificationXref>
+  <bp:UnificationXref rdf:ID="UnificationXref11">
+    <bp:db rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Reactome Database ID Release 84</bp:db>
+    <bp:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">3000239</bp:id>
+    <bp:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Database identifier. Use this URL to connect to the web page of this instance in Reactome: http://www.reactome.org/cgi-bin/eventbrowser?DB=gk_current&amp;ID=3000239</bp:comment>
+  </bp:UnificationXref>
+  <bp:UnificationXref rdf:ID="UnificationXref12">
+    <bp:db rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Reactome</bp:db>
+    <bp:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">R-ALL-3000239</bp:id>
+    <bp:idVersion rdf:datatype="http://www.w3.org/2001/XMLSchema#string">3</bp:idVersion>
+    <bp:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Reactome stable identifier. Use this URL to connect to the web page of this instance in Reactome: http://www.reactome.org/cgi-bin/eventbrowser_st_id?ST_ID=R-ALL-3000239.3</bp:comment>
+  </bp:UnificationXref>
+  <bp:Catalysis rdf:ID="Catalysis1">
+    <bp:controller rdf:resource="#Complex1" />
+    <bp:controlled rdf:resource="#BiochemicalReaction1" />
+    <bp:controlType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ACTIVATION</bp:controlType>
+    <bp:xref rdf:resource="#RelationshipXref3" />
+    <bp:xref rdf:resource="#RelationshipXref4" />
+    <bp:dataSource rdf:resource="#Provenance1" />
+  </bp:Catalysis>
+  <bp:Complex rdf:ID="Complex1">
+    <bp:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Converted from EntitySet in Reactome</bp:comment>
+    <bp:memberPhysicalEntity rdf:resource="#Complex2" />
+    <bp:memberPhysicalEntity rdf:resource="#Complex3" />
+    <bp:displayName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ABCD4 mutant:LBRD1 complexes</bp:displayName>
+    <bp:cellularLocation rdf:resource="#CellularLocationVocabulary3" />
+    <bp:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Reactome DB_ID: 5683323</bp:comment>
+    <bp:xref rdf:resource="#UnificationXref28" />
+    <bp:xref rdf:resource="#UnificationXref29" />
+    <bp:dataSource rdf:resource="#Provenance1" />
+  </bp:Complex>
+  <bp:Complex rdf:ID="Complex2">
+    <bp:displayName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ABCD4 E583Lfs*9:LMBRD1</bp:displayName>
+    <bp:cellularLocation rdf:resource="#CellularLocationVocabulary3" />
+    <bp:componentStoichiometry rdf:resource="#Stoichiometry1" />
+    <bp:component rdf:resource="#Protein1" />
+    <bp:componentStoichiometry rdf:resource="#Stoichiometry2" />
+    <bp:component rdf:resource="#Protein2" />
+    <bp:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Reactome DB_ID: 9730746</bp:comment>
+    <bp:xref rdf:resource="#UnificationXref21" />
+    <bp:xref rdf:resource="#UnificationXref22" />
+    <bp:dataSource rdf:resource="#Provenance1" />
+  </bp:Complex>
+  <bp:CellularLocationVocabulary rdf:ID="CellularLocationVocabulary3">
+    <bp:term rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lysosomal membrane</bp:term>
+    <bp:xref rdf:resource="#UnificationXref13" />
+  </bp:CellularLocationVocabulary>
+  <bp:UnificationXref rdf:ID="UnificationXref13">
+    <bp:db rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GENE ONTOLOGY</bp:db>
+    <bp:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GO:0005765</bp:id>
+  </bp:UnificationXref>
+  <bp:Protein rdf:ID="Protein1">
+    <bp:displayName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LMBRD1</bp:displayName>
+    <bp:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Probable lysosomal cobalamin transporter</bp:name>
+    <bp:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LMBD1_HUMAN</bp:name>
+    <bp:cellularLocation rdf:resource="#CellularLocationVocabulary3" />
+    <bp:entityReference rdf:resource="#ProteinReference1" />
+    <bp:feature rdf:resource="#FragmentFeature1" />
+    <bp:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Reactome DB_ID: 2980937</bp:comment>
+    <bp:xref rdf:resource="#UnificationXref16" />
+    <bp:xref rdf:resource="#UnificationXref17" />
+    <bp:dataSource rdf:resource="#Provenance1" />
+  </bp:Protein>
+  <bp:ProteinReference rdf:ID="ProteinReference1">
+    <bp:organism rdf:resource="#BioSource1" />
+    <bp:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UniProt:Q9NUN5 LMBRD1</bp:name>
+    <bp:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LMBRD1</bp:name>
+    <bp:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C6orf209</bp:name>
+    <bp:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NESI</bp:name>
+    <bp:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BM-021</bp:name>
+    <bp:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CD001</bp:name>
+    <bp:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MSTP044</bp:name>
+    <bp:xref rdf:resource="#UnificationXref15" />
+    <bp:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FUNCTION Lysosomal membrane chaperone required to export cobalamin (vitamin B12) from the lysosome to the cytosol, allowing its conversion to cofactors (PubMed:19136951). Targets ABCD4 transporter from the endoplasmic reticulum to the lysosome (PubMed:27456980). Then forms a complex with lysosomal ABCD4 and cytoplasmic MMACHC to transport cobalamin across the lysosomal membrane (PubMed:25535791). Acts as an adapter protein which plays an important role in mediating and regulating the internalization of the insulin receptor (INSR) (By similarity). Involved in clathrin-mediated endocytosis of INSR via its interaction with adapter protein complex 2 (By similarity). Essential for the initiation of gastrulation and early formation of mesoderm structures during embryogenesis (By similarity).SUBUNIT Interacts with ABCD4; this interaction induces the translocation of ABCD4 from the endoplasmic reticulum to the lysosome (PubMed:27456980,PubMed:28572511,PubMed:33845046). Interacts with ABCD4 and MMACHC; this interaction ensures the transport of cobalamin from the lysosome to the cytoplasm (PubMed:25535791). Interacts with INSR, adapter protein complex 2 and clathrin heavy chain (By similarity).TISSUE SPECIFICITY Isoform 3 is expressed in liver.PTM N-glycosylated.SIMILARITY Belongs to the LIMR family. LMBRD1 subfamily.</bp:comment>
+  </bp:ProteinReference>
+  <bp:BioSource rdf:ID="BioSource1">
+    <bp:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Homo sapiens</bp:name>
+    <bp:xref rdf:resource="#UnificationXref14" />
+  </bp:BioSource>
+  <bp:UnificationXref rdf:ID="UnificationXref14">
+    <bp:db rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCBI Taxonomy</bp:db>
+    <bp:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">9606</bp:id>
+  </bp:UnificationXref>
+  <bp:UnificationXref rdf:ID="UnificationXref15">
+    <bp:db rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UniProt</bp:db>
+    <bp:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Q9NUN5</bp:id>
+  </bp:UnificationXref>
+  <bp:FragmentFeature rdf:ID="FragmentFeature1">
+    <bp:featureLocation rdf:resource="#SequenceInterval1" />
+  </bp:FragmentFeature>
+  <bp:SequenceInterval rdf:ID="SequenceInterval1">
+    <bp:sequenceIntervalBegin rdf:resource="#SequenceSite1" />
+    <bp:sequenceIntervalEnd rdf:resource="#SequenceSite2" />
+  </bp:SequenceInterval>
+  <bp:SequenceSite rdf:ID="SequenceSite1">
+    <bp:sequencePosition rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</bp:sequencePosition>
+    <bp:positionStatus rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EQUAL</bp:positionStatus>
+  </bp:SequenceSite>
+  <bp:SequenceSite rdf:ID="SequenceSite2">
+    <bp:sequencePosition rdf:datatype="http://www.w3.org/2001/XMLSchema#int">540</bp:sequencePosition>
+    <bp:positionStatus rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EQUAL</bp:positionStatus>
+  </bp:SequenceSite>
+  <bp:UnificationXref rdf:ID="UnificationXref16">
+    <bp:db rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Reactome Database ID Release 84</bp:db>
+    <bp:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2980937</bp:id>
+    <bp:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Database identifier. Use this URL to connect to the web page of this instance in Reactome: http://www.reactome.org/cgi-bin/eventbrowser?DB=gk_current&amp;ID=2980937</bp:comment>
+  </bp:UnificationXref>
+  <bp:UnificationXref rdf:ID="UnificationXref17">
+    <bp:db rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Reactome</bp:db>
+    <bp:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">R-HSA-2980937</bp:id>
+    <bp:idVersion rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1</bp:idVersion>
+    <bp:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Reactome stable identifier. Use this URL to connect to the web page of this instance in Reactome: http://www.reactome.org/cgi-bin/eventbrowser_st_id?ST_ID=R-HSA-2980937.1</bp:comment>
+  </bp:UnificationXref>
+  <bp:Stoichiometry rdf:ID="Stoichiometry1">
+    <bp:stoichiometricCoefficient rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1</bp:stoichiometricCoefficient>
+    <bp:physicalEntity rdf:resource="#Protein1" />
+  </bp:Stoichiometry>
+  <bp:Protein rdf:ID="Protein2">
+    <bp:displayName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ABCD4_HUMAN</bp:displayName>
+    <bp:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ABCD4 E583Lfs*9</bp:name>
+    <bp:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ATP-binding cassette sub-family D member 4</bp:name>
+    <bp:cellularLocation rdf:resource="#CellularLocationVocabulary3" />
+    <bp:entityReference rdf:resource="#ProteinReference2" />
+    <bp:feature rdf:resource="#ModificationFeature1" />
+    <bp:feature rdf:resource="#FragmentFeature2" />
+    <bp:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Reactome DB_ID: 5683320</bp:comment>
+    <bp:xref rdf:resource="#UnificationXref19" />
+    <bp:xref rdf:resource="#UnificationXref20" />
+    <bp:dataSource rdf:resource="#Provenance1" />
+  </bp:Protein>
+  <bp:ProteinReference rdf:ID="ProteinReference2">
+    <bp:organism rdf:resource="#BioSource1" />
+    <bp:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UniProt:O14678 ABCD4</bp:name>
+    <bp:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ABCD4</bp:name>
+    <bp:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PXMP1L</bp:name>
+    <bp:xref rdf:resource="#UnificationXref18" />
+    <bp:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FUNCTION Lysosomal membrane protein that transports cobalamin (Vitamin B12) from the lysosomal lumen to the cytosol in an ATP-dependent manner (PubMed:22922874,PubMed:33845046,PubMed:28572511,PubMed:31467407). Targeted by LMBRD1 lysosomal chaperone from the endoplasmic reticulum to the lysosomal membrane (PubMed:27456980). Then forms a complex with lysosomal chaperone LMBRD1 and cytosolic MMACHC to transport cobalamin across the lysosomal membrane (PubMed:25535791).SUBUNIT Homodimer or heterodimer (PubMed:27456980,PubMed:33845046). Interacts with LMBRD1; this interaction induces the translocation of ABCD4 from the ER to the lysosome membrane (PubMed:27456980,PubMed:28572511). Interacts with LMBRD1 and MMACHC; this interaction ensures the transport of cobalamin from the lysosome to the cytosol (PubMed:25535791).TISSUE SPECIFICITY Ubiquitous.SIMILARITY Belongs to the ABC transporter superfamily. ABCD family. Peroxisomal fatty acyl CoA transporter (TC 3.A.1.203) subfamily.CAUTION Originally proposed to be a peroxisomal protein (PubMed:9266848). Recent studies have suggested its localization to the endoplasmic reticulum and within the lysosome (PubMed:27456980).</bp:comment>
+  </bp:ProteinReference>
+  <bp:UnificationXref rdf:ID="UnificationXref18">
+    <bp:db rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UniProt</bp:db>
+    <bp:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">O14678</bp:id>
+  </bp:UnificationXref>
+  <bp:ModificationFeature rdf:ID="ModificationFeature1">
+    <bp:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Replacement of residues 583 to 590 by LRSFIPWF</bp:comment>
+  </bp:ModificationFeature>
+  <bp:FragmentFeature rdf:ID="FragmentFeature2">
+    <bp:featureLocation rdf:resource="#SequenceInterval2" />
+  </bp:FragmentFeature>
+  <bp:SequenceInterval rdf:ID="SequenceInterval2">
+    <bp:sequenceIntervalBegin rdf:resource="#SequenceSite3" />
+    <bp:sequenceIntervalEnd rdf:resource="#SequenceSite4" />
+  </bp:SequenceInterval>
+  <bp:SequenceSite rdf:ID="SequenceSite3">
+    <bp:sequencePosition rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</bp:sequencePosition>
+    <bp:positionStatus rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EQUAL</bp:positionStatus>
+  </bp:SequenceSite>
+  <bp:SequenceSite rdf:ID="SequenceSite4">
+    <bp:sequencePosition rdf:datatype="http://www.w3.org/2001/XMLSchema#int">590</bp:sequencePosition>
+    <bp:positionStatus rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EQUAL</bp:positionStatus>
+  </bp:SequenceSite>
+  <bp:UnificationXref rdf:ID="UnificationXref19">
+    <bp:db rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Reactome Database ID Release 84</bp:db>
+    <bp:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5683320</bp:id>
+    <bp:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Database identifier. Use this URL to connect to the web page of this instance in Reactome: http://www.reactome.org/cgi-bin/eventbrowser?DB=gk_current&amp;ID=5683320</bp:comment>
+  </bp:UnificationXref>
+  <bp:UnificationXref rdf:ID="UnificationXref20">
+    <bp:db rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Reactome</bp:db>
+    <bp:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">R-HSA-5683320</bp:id>
+    <bp:idVersion rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1</bp:idVersion>
+    <bp:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Reactome stable identifier. Use this URL to connect to the web page of this instance in Reactome: http://www.reactome.org/cgi-bin/eventbrowser_st_id?ST_ID=R-HSA-5683320.1</bp:comment>
+  </bp:UnificationXref>
+  <bp:Stoichiometry rdf:ID="Stoichiometry2">
+    <bp:stoichiometricCoefficient rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1</bp:stoichiometricCoefficient>
+    <bp:physicalEntity rdf:resource="#Protein2" />
+  </bp:Stoichiometry>
+  <bp:UnificationXref rdf:ID="UnificationXref21">
+    <bp:db rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Reactome Database ID Release 84</bp:db>
+    <bp:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">9730746</bp:id>
+    <bp:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Database identifier. Use this URL to connect to the web page of this instance in Reactome: http://www.reactome.org/cgi-bin/eventbrowser?DB=gk_current&amp;ID=9730746</bp:comment>
+  </bp:UnificationXref>
+  <bp:UnificationXref rdf:ID="UnificationXref22">
+    <bp:db rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Reactome</bp:db>
+    <bp:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">R-HSA-9730746</bp:id>
+    <bp:idVersion rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1</bp:idVersion>
+    <bp:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Reactome stable identifier. Use this URL to connect to the web page of this instance in Reactome: http://www.reactome.org/cgi-bin/eventbrowser_st_id?ST_ID=R-HSA-9730746.1</bp:comment>
+  </bp:UnificationXref>
+  <bp:Complex rdf:ID="Complex3">
+    <bp:displayName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ABCD4 Y319C:LMBRD1</bp:displayName>
+    <bp:cellularLocation rdf:resource="#CellularLocationVocabulary3" />
+    <bp:componentStoichiometry rdf:resource="#Stoichiometry3" />
+    <bp:component rdf:resource="#Protein3" />
+    <bp:componentStoichiometry rdf:resource="#Stoichiometry4" />
+    <bp:component rdf:resource="#Protein1" />
+    <bp:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Reactome DB_ID: 9730744</bp:comment>
+    <bp:xref rdf:resource="#UnificationXref26" />
+    <bp:xref rdf:resource="#UnificationXref27" />
+    <bp:dataSource rdf:resource="#Provenance1" />
+  </bp:Complex>
+  <bp:Protein rdf:ID="Protein3">
+    <bp:displayName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ABCD4 Y319C</bp:displayName>
+    <bp:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ATP-binding cassette sub-family D member 4</bp:name>
+    <bp:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ABCD4_HUMAN</bp:name>
+    <bp:cellularLocation rdf:resource="#CellularLocationVocabulary3" />
+    <bp:entityReference rdf:resource="#ProteinReference2" />
+    <bp:feature rdf:resource="#ModificationFeature2" />
+    <bp:feature rdf:resource="#FragmentFeature3" />
+    <bp:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Reactome DB_ID: 5683326</bp:comment>
+    <bp:xref rdf:resource="#UnificationXref24" />
+    <bp:xref rdf:resource="#UnificationXref25" />
+    <bp:dataSource rdf:resource="#Provenance1" />
+  </bp:Protein>
+  <bp:ModificationFeature rdf:ID="ModificationFeature2">
+    <bp:featureLocation rdf:resource="#SequenceSite5" />
+    <bp:modificationType rdf:resource="#SequenceModificationVocabulary1" />
+  </bp:ModificationFeature>
+  <bp:SequenceSite rdf:ID="SequenceSite5">
+    <bp:sequencePosition rdf:datatype="http://www.w3.org/2001/XMLSchema#int">319</bp:sequencePosition>
+    <bp:positionStatus rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EQUAL</bp:positionStatus>
+  </bp:SequenceSite>
+  <bp:SequenceModificationVocabulary rdf:ID="SequenceModificationVocabulary1">
+    <bp:term rdf:datatype="http://www.w3.org/2001/XMLSchema#string">L-tyrosine removal</bp:term>
+    <bp:xref rdf:resource="#UnificationXref23" />
+  </bp:SequenceModificationVocabulary>
+  <bp:UnificationXref rdf:ID="UnificationXref23">
+    <bp:db rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MOD</bp:db>
+    <bp:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MOD:01649</bp:id>
+  </bp:UnificationXref>
+  <bp:FragmentFeature rdf:ID="FragmentFeature3">
+    <bp:featureLocation rdf:resource="#SequenceInterval3" />
+  </bp:FragmentFeature>
+  <bp:SequenceInterval rdf:ID="SequenceInterval3">
+    <bp:sequenceIntervalBegin rdf:resource="#SequenceSite6" />
+    <bp:sequenceIntervalEnd rdf:resource="#SequenceSite7" />
+  </bp:SequenceInterval>
+  <bp:SequenceSite rdf:ID="SequenceSite6">
+    <bp:sequencePosition rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</bp:sequencePosition>
+    <bp:positionStatus rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EQUAL</bp:positionStatus>
+  </bp:SequenceSite>
+  <bp:SequenceSite rdf:ID="SequenceSite7">
+    <bp:sequencePosition rdf:datatype="http://www.w3.org/2001/XMLSchema#int">606</bp:sequencePosition>
+    <bp:positionStatus rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EQUAL</bp:positionStatus>
+  </bp:SequenceSite>
+  <bp:UnificationXref rdf:ID="UnificationXref24">
+    <bp:db rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Reactome Database ID Release 84</bp:db>
+    <bp:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5683326</bp:id>
+    <bp:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Database identifier. Use this URL to connect to the web page of this instance in Reactome: http://www.reactome.org/cgi-bin/eventbrowser?DB=gk_current&amp;ID=5683326</bp:comment>
+  </bp:UnificationXref>
+  <bp:UnificationXref rdf:ID="UnificationXref25">
+    <bp:db rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Reactome</bp:db>
+    <bp:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">R-HSA-5683326</bp:id>
+    <bp:idVersion rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1</bp:idVersion>
+    <bp:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Reactome stable identifier. Use this URL to connect to the web page of this instance in Reactome: http://www.reactome.org/cgi-bin/eventbrowser_st_id?ST_ID=R-HSA-5683326.1</bp:comment>
+  </bp:UnificationXref>
+  <bp:Stoichiometry rdf:ID="Stoichiometry3">
+    <bp:stoichiometricCoefficient rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1</bp:stoichiometricCoefficient>
+    <bp:physicalEntity rdf:resource="#Protein3" />
+  </bp:Stoichiometry>
+  <bp:Stoichiometry rdf:ID="Stoichiometry4">
+    <bp:stoichiometricCoefficient rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1</bp:stoichiometricCoefficient>
+    <bp:physicalEntity rdf:resource="#Protein1" />
+  </bp:Stoichiometry>
+  <bp:UnificationXref rdf:ID="UnificationXref26">
+    <bp:db rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Reactome Database ID Release 84</bp:db>
+    <bp:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">9730744</bp:id>
+    <bp:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Database identifier. Use this URL to connect to the web page of this instance in Reactome: http://www.reactome.org/cgi-bin/eventbrowser?DB=gk_current&amp;ID=9730744</bp:comment>
+  </bp:UnificationXref>
+  <bp:UnificationXref rdf:ID="UnificationXref27">
+    <bp:db rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Reactome</bp:db>
+    <bp:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">R-HSA-9730744</bp:id>
+    <bp:idVersion rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1</bp:idVersion>
+    <bp:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Reactome stable identifier. Use this URL to connect to the web page of this instance in Reactome: http://www.reactome.org/cgi-bin/eventbrowser_st_id?ST_ID=R-HSA-9730744.1</bp:comment>
+  </bp:UnificationXref>
+  <bp:UnificationXref rdf:ID="UnificationXref28">
+    <bp:db rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Reactome Database ID Release 84</bp:db>
+    <bp:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5683323</bp:id>
+    <bp:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Database identifier. Use this URL to connect to the web page of this instance in Reactome: http://www.reactome.org/cgi-bin/eventbrowser?DB=gk_current&amp;ID=5683323</bp:comment>
+  </bp:UnificationXref>
+  <bp:UnificationXref rdf:ID="UnificationXref29">
+    <bp:db rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Reactome</bp:db>
+    <bp:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">R-HSA-5683323</bp:id>
+    <bp:idVersion rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2</bp:idVersion>
+    <bp:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Reactome stable identifier. Use this URL to connect to the web page of this instance in Reactome: http://www.reactome.org/cgi-bin/eventbrowser_st_id?ST_ID=R-HSA-5683323.2</bp:comment>
+  </bp:UnificationXref>
+  <bp:RelationshipXref rdf:ID="RelationshipXref3">
+    <bp:db rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GENE ONTOLOGY</bp:db>
+    <bp:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GO:0015420</bp:id>
+    <bp:relationshipType rdf:resource="#RelationshipTypeVocabulary2" />
+  </bp:RelationshipXref>
+  <bp:RelationshipTypeVocabulary rdf:ID="RelationshipTypeVocabulary2">
+    <bp:term rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gene ontology term for cellular function</bp:term>
+    <bp:xref rdf:resource="#UnificationXref30" />
+  </bp:RelationshipTypeVocabulary>
+  <bp:UnificationXref rdf:ID="UnificationXref30">
+    <bp:db rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MI</bp:db>
+    <bp:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MI:0355</bp:id>
+  </bp:UnificationXref>
+  <bp:RelationshipTypeVocabulary rdf:ID="RelationshipTypeVocabulary3">
+    <bp:term rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Same Catalyst Activity</bp:term>
+  </bp:RelationshipTypeVocabulary>
+  <bp:RelationshipXref rdf:ID="RelationshipXref4">
+    <bp:db rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Reactome Database ID Release 84</bp:db>
+    <bp:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">9631842</bp:id>
+    <bp:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Database identifier. Use this URL to connect to the web page of this instance in Reactome: http://www.reactome.org/cgi-bin/eventbrowser?DB=gk_current&amp;ID=9631842</bp:comment>
+    <bp:relationshipType rdf:resource="#RelationshipTypeVocabulary3" />
+  </bp:RelationshipXref>
+  <bp:UnificationXref rdf:ID="UnificationXref31">
+    <bp:db rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Reactome Database ID Release 84</bp:db>
+    <bp:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5683325</bp:id>
+    <bp:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Database identifier. Use this URL to connect to the web page of this instance in Reactome: http://www.reactome.org/cgi-bin/eventbrowser?DB=gk_current&amp;ID=5683325</bp:comment>
+  </bp:UnificationXref>
+  <bp:UnificationXref rdf:ID="UnificationXref32">
+    <bp:db rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Reactome</bp:db>
+    <bp:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">R-HSA-5683325</bp:id>
+    <bp:idVersion rdf:datatype="http://www.w3.org/2001/XMLSchema#string">3</bp:idVersion>
+    <bp:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Reactome stable identifier. Use this URL to connect to the web page of this instance in Reactome: http://www.reactome.org/cgi-bin/eventbrowser_st_id?ST_ID=R-HSA-5683325.3</bp:comment>
+  </bp:UnificationXref>
+  <bp:PublicationXref rdf:ID="PublicationXref1">
+    <bp:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">22922874</bp:id>
+    <bp:db rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pubmed</bp:db>
+    <bp:year rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2012</bp:year>
+    <bp:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mutations in ABCD4 cause a new inborn error of vitamin B12 metabolism</bp:title>
+    <bp:author rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Coelho, David</bp:author>
+    <bp:author rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kim, Jaeseung C</bp:author>
+    <bp:author rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Miousse, Isabelle R</bp:author>
+    <bp:author rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fung, Stephen</bp:author>
+    <bp:author rdf:datatype="http://www.w3.org/2001/XMLSchema#string">du Moulin, Marcel</bp:author>
+    <bp:author rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Buers, Insa</bp:author>
+    <bp:author rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Suormala, T</bp:author>
+    <bp:author rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Burda, Patricie</bp:author>
+    <bp:author rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Frapolli, Michele</bp:author>
+    <bp:author rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Stucki, Martin</bp:author>
+    <bp:author rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nürnberg, P</bp:author>
+    <bp:author rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Thiele, Holger</bp:author>
+    <bp:author rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Robenek, Horst</bp:author>
+    <bp:author rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Höhne, Wolfgang</bp:author>
+    <bp:author rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Longo, Nicola</bp:author>
+    <bp:author rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pasquali, Marzia</bp:author>
+    <bp:author rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mengel, Eugen</bp:author>
+    <bp:author rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Watkins, D</bp:author>
+    <bp:author rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Shoubridge, EA</bp:author>
+    <bp:author rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Majewski, Jacek</bp:author>
+    <bp:author rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rosenblatt, DS</bp:author>
+    <bp:author rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fowler, Brian</bp:author>
+    <bp:author rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rutsch, F</bp:author>
+    <bp:author rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Baumgartner, MR</bp:author>
+    <bp:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nat. Genet. 44:1152-5</bp:source>
+  </bp:PublicationXref>
+  <bp:PathwayStep rdf:ID="PathwayStep1">
+    <bp:stepProcess rdf:resource="#BiochemicalReaction1" />
+    <bp:stepProcess rdf:resource="#Catalysis1" />
+  </bp:PathwayStep>
+  <bp:UnificationXref rdf:ID="UnificationXref33">
+    <bp:db rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Reactome Database ID Release 84</bp:db>
+    <bp:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5683329</bp:id>
+    <bp:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Database identifier. Use this URL to connect to the web page of this instance in Reactome: http://www.reactome.org/cgi-bin/eventbrowser?DB=gk_current&amp;ID=5683329</bp:comment>
+  </bp:UnificationXref>
+  <bp:UnificationXref rdf:ID="UnificationXref34">
+    <bp:db rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Reactome</bp:db>
+    <bp:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">R-HSA-5683329</bp:id>
+    <bp:idVersion rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2</bp:idVersion>
+    <bp:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Reactome stable identifier. Use this URL to connect to the web page of this instance in Reactome: http://www.reactome.org/cgi-bin/eventbrowser_st_id?ST_ID=R-HSA-5683329.2</bp:comment>
+  </bp:UnificationXref>
+</rdf:RDF>
+

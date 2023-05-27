@@ -1,0 +1,490 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" xml:base="http://www.reactome.org/biopax/84/2160456#">
+  <owl:Ontology rdf:about="">
+    <owl:imports rdf:resource="http://www.biopax.org/release/biopax-level3.owl" />
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BioPAX pathway converted from "Phenylketonuria" in the Reactome database.</rdfs:comment>
+  </owl:Ontology>
+  <bp:Pathway rdf:ID="Pathway1">
+    <bp:pathwayComponent rdf:resource="#BiochemicalReaction1" />
+    <bp:pathwayOrder rdf:resource="#PathwayStep1" />
+    <bp:organism rdf:resource="#BioSource1" />
+    <bp:displayName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Phenylketonuria</bp:displayName>
+    <bp:xref rdf:resource="#UnificationXref25" />
+    <bp:xref rdf:resource="#UnificationXref26" />
+    <bp:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Phenylalanine hydroxylase (PAH) normally catalyzes the conversion of phenylalanine to tyrosine. In the absence of functional PAH, phenylalanine accumulates to high levels in the blood and is converted to phenylpyruvate and phenyllactate (Clemens et al. 1990; Langenbeck et al. 1992; Mitchell et al. 2011). The extent of these conversions is modulated by genetic factors distinct from PAH, as siblings with the identical PAH defect can produce different amounts of them (Treacy et al. 1996).&lt;p&gt;Both L-amino acid oxidase (Boulland et al. 2004) and Kynurenine--oxoglutarate transaminase 3 (Han et al. 2004) can catalyze the conversion of phenylalanine to phenylpyruvate and lactate dehydrogenase can catalyze the conversion of the latter molecule to phenyllactate (Meister 1950), in reactions not annotated here.</bp:comment>
+    <bp:xref rdf:resource="#PublicationXref1" />
+    <bp:xref rdf:resource="#PublicationXref3" />
+    <bp:xref rdf:resource="#PublicationXref4" />
+    <bp:xref rdf:resource="#PublicationXref5" />
+    <bp:xref rdf:resource="#PublicationXref6" />
+    <bp:xref rdf:resource="#PublicationXref7" />
+    <bp:xref rdf:resource="#PublicationXref8" />
+    <bp:dataSource rdf:resource="#Provenance1" />
+    <bp:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Authored: D'Eustachio, P, 2012-03-04</bp:comment>
+    <bp:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Reviewed: Jassal, B, 2012-03-16</bp:comment>
+    <bp:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Edited: D'Eustachio, P, 2012-03-16</bp:comment>
+  </bp:Pathway>
+  <bp:BiochemicalReaction rdf:ID="BiochemicalReaction1">
+    <bp:conversionDirection rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LEFT-TO-RIGHT</bp:conversionDirection>
+    <bp:left rdf:resource="#SmallMolecule1" />
+    <bp:left rdf:resource="#SmallMolecule2" />
+    <bp:left rdf:resource="#SmallMolecule3" />
+    <bp:eCNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1.14.16.1</bp:eCNumber>
+    <bp:displayName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Defective PAH does not hydroxylate L-Phe to L-Tyr</bp:displayName>
+    <bp:xref rdf:resource="#UnificationXref23" />
+    <bp:xref rdf:resource="#UnificationXref24" />
+    <bp:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Inactivating mutations of cytosolic phenylalanine hydroxylase (PAH) block the normal reaction of phenylalanine, molecular oxygen and tetrahydrobiopterin to form tyrosine, water, and 4 alpha-hydroxytetrahydrobiopterin. Excess phenylalanine accumulates as a result, driving the formation of abnormally high levels of  phenylpyruvate, and phenyllactate (Guldberg et al. 1996; Mitchell et al. 2011) in reactions not annotated here.</bp:comment>
+    <bp:xref rdf:resource="#PublicationXref1" />
+    <bp:xref rdf:resource="#PublicationXref2" />
+    <bp:dataSource rdf:resource="#Provenance1" />
+    <bp:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Authored: Jassal, Bijay, 2014-12-08</bp:comment>
+    <bp:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Reviewed: D'Eustachio, Peter, 2015-01-28</bp:comment>
+    <bp:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Edited: Jassal, Bijay, 2014-12-08</bp:comment>
+  </bp:BiochemicalReaction>
+  <bp:SmallMolecule rdf:ID="SmallMolecule1">
+    <bp:displayName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">L-Phe</bp:displayName>
+    <bp:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">(S)-alpha-amino-beta-phenylpropionic acid</bp:name>
+    <bp:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">L-phenylalanine zwitterion</bp:name>
+    <bp:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">L-phenylalanine</bp:name>
+    <bp:cellularLocation rdf:resource="#CellularLocationVocabulary1" />
+    <bp:entityReference rdf:resource="#SmallMoleculeReference1" />
+    <bp:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Reactome DB_ID: 29502</bp:comment>
+    <bp:xref rdf:resource="#UnificationXref3" />
+    <bp:xref rdf:resource="#UnificationXref4" />
+    <bp:dataSource rdf:resource="#Provenance1" />
+    <bp:xref rdf:resource="#RelationshipXref1" />
+  </bp:SmallMolecule>
+  <bp:CellularLocationVocabulary rdf:ID="CellularLocationVocabulary1">
+    <bp:term rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cytosol</bp:term>
+    <bp:xref rdf:resource="#UnificationXref1" />
+  </bp:CellularLocationVocabulary>
+  <bp:UnificationXref rdf:ID="UnificationXref1">
+    <bp:db rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GENE ONTOLOGY</bp:db>
+    <bp:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GO:0005829</bp:id>
+  </bp:UnificationXref>
+  <bp:SmallMoleculeReference rdf:ID="SmallMoleculeReference1">
+    <bp:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">L-phenylalanine zwitterion [ChEBI:58095]</bp:name>
+    <bp:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">L-phenylalanine zwitterion</bp:name>
+    <bp:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">InChI=1S/C9H11NO2/c10-8(9(11)12)6-7-4-2-1-3-5-7/h1-5,8H,6,10H2,(H,11,12)/t8-/m0/s1</bp:name>
+    <bp:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">phenylalanine</bp:name>
+    <bp:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">L-phenylalanine</bp:name>
+    <bp:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C9H11NO2</bp:name>
+    <bp:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[NH3+][C@@H](Cc1ccccc1)C([O-])=O</bp:name>
+    <bp:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">(2S)-2-azaniumyl-3-phenylpropanoate</bp:name>
+    <bp:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">(2S)-2-ammonio-3-phenylpropanoate</bp:name>
+    <bp:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">165.18910</bp:name>
+    <bp:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">COLNVLDHVKWLRT-QMMMGPOBSA-N</bp:name>
+    <bp:xref rdf:resource="#UnificationXref2" />
+  </bp:SmallMoleculeReference>
+  <bp:UnificationXref rdf:ID="UnificationXref2">
+    <bp:db rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ChEBI</bp:db>
+    <bp:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CHEBI:58095</bp:id>
+  </bp:UnificationXref>
+  <bp:UnificationXref rdf:ID="UnificationXref3">
+    <bp:db rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Reactome Database ID Release 84</bp:db>
+    <bp:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">29502</bp:id>
+    <bp:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Database identifier. Use this URL to connect to the web page of this instance in Reactome: http://www.reactome.org/cgi-bin/eventbrowser?DB=gk_current&amp;ID=29502</bp:comment>
+  </bp:UnificationXref>
+  <bp:UnificationXref rdf:ID="UnificationXref4">
+    <bp:db rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Reactome</bp:db>
+    <bp:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">R-ALL-29502</bp:id>
+    <bp:idVersion rdf:datatype="http://www.w3.org/2001/XMLSchema#string">4</bp:idVersion>
+    <bp:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Reactome stable identifier. Use this URL to connect to the web page of this instance in Reactome: http://www.reactome.org/cgi-bin/eventbrowser_st_id?ST_ID=R-ALL-29502.4</bp:comment>
+  </bp:UnificationXref>
+  <bp:Provenance rdf:ID="Provenance1">
+    <bp:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Reactome</bp:name>
+    <bp:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.reactome.org</bp:comment>
+  </bp:Provenance>
+  <bp:RelationshipXref rdf:ID="RelationshipXref1">
+    <bp:relationshipType rdf:resource="#RelationshipTypeVocabulary1" />
+    <bp:db rdf:datatype="http://www.w3.org/2001/XMLSchema#string">COMPOUND</bp:db>
+    <bp:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C00079</bp:id>
+  </bp:RelationshipXref>
+  <bp:RelationshipTypeVocabulary rdf:ID="RelationshipTypeVocabulary1">
+    <bp:term rdf:datatype="http://www.w3.org/2001/XMLSchema#string">additional information</bp:term>
+    <bp:xref rdf:resource="#UnificationXref5" />
+  </bp:RelationshipTypeVocabulary>
+  <bp:UnificationXref rdf:ID="UnificationXref5">
+    <bp:db rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MI</bp:db>
+    <bp:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MI:0361</bp:id>
+  </bp:UnificationXref>
+  <bp:SmallMolecule rdf:ID="SmallMolecule2">
+    <bp:displayName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BH4</bp:displayName>
+    <bp:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tetrahydrobiopterin</bp:name>
+    <bp:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5,6,7,8-tetrahydrobiopterin</bp:name>
+    <bp:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2-Amino-6-(1,2-dihydroxypropyl)-5,6,7,8-tetrahydoro-4(1H)-pteridinone</bp:name>
+    <bp:cellularLocation rdf:resource="#CellularLocationVocabulary1" />
+    <bp:entityReference rdf:resource="#SmallMoleculeReference2" />
+    <bp:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Reactome DB_ID: 29870</bp:comment>
+    <bp:xref rdf:resource="#UnificationXref7" />
+    <bp:xref rdf:resource="#UnificationXref8" />
+    <bp:dataSource rdf:resource="#Provenance1" />
+    <bp:xref rdf:resource="#RelationshipXref2" />
+  </bp:SmallMolecule>
+  <bp:SmallMoleculeReference rdf:ID="SmallMoleculeReference2">
+    <bp:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5,6,7,8-tetrahydrobiopterin [ChEBI:15372]</bp:name>
+    <bp:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5,6,7,8-tetrahydrobiopterin</bp:name>
+    <bp:xref rdf:resource="#UnificationXref6" />
+  </bp:SmallMoleculeReference>
+  <bp:UnificationXref rdf:ID="UnificationXref6">
+    <bp:db rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ChEBI</bp:db>
+    <bp:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CHEBI:15372</bp:id>
+  </bp:UnificationXref>
+  <bp:UnificationXref rdf:ID="UnificationXref7">
+    <bp:db rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Reactome Database ID Release 84</bp:db>
+    <bp:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">29870</bp:id>
+    <bp:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Database identifier. Use this URL to connect to the web page of this instance in Reactome: http://www.reactome.org/cgi-bin/eventbrowser?DB=gk_current&amp;ID=29870</bp:comment>
+  </bp:UnificationXref>
+  <bp:UnificationXref rdf:ID="UnificationXref8">
+    <bp:db rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Reactome</bp:db>
+    <bp:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">R-ALL-29870</bp:id>
+    <bp:idVersion rdf:datatype="http://www.w3.org/2001/XMLSchema#string">3</bp:idVersion>
+    <bp:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Reactome stable identifier. Use this URL to connect to the web page of this instance in Reactome: http://www.reactome.org/cgi-bin/eventbrowser_st_id?ST_ID=R-ALL-29870.3</bp:comment>
+  </bp:UnificationXref>
+  <bp:RelationshipXref rdf:ID="RelationshipXref2">
+    <bp:relationshipType rdf:resource="#RelationshipTypeVocabulary1" />
+    <bp:db rdf:datatype="http://www.w3.org/2001/XMLSchema#string">COMPOUND</bp:db>
+    <bp:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C00272</bp:id>
+  </bp:RelationshipXref>
+  <bp:SmallMolecule rdf:ID="SmallMolecule3">
+    <bp:displayName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">O2</bp:displayName>
+    <bp:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Oxygen</bp:name>
+    <bp:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dioxygen</bp:name>
+    <bp:cellularLocation rdf:resource="#CellularLocationVocabulary1" />
+    <bp:entityReference rdf:resource="#SmallMoleculeReference3" />
+    <bp:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Reactome DB_ID: 29368</bp:comment>
+    <bp:xref rdf:resource="#UnificationXref10" />
+    <bp:xref rdf:resource="#UnificationXref11" />
+    <bp:dataSource rdf:resource="#Provenance1" />
+    <bp:xref rdf:resource="#RelationshipXref3" />
+  </bp:SmallMolecule>
+  <bp:SmallMoleculeReference rdf:ID="SmallMoleculeReference3">
+    <bp:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dioxygen [ChEBI:15379]</bp:name>
+    <bp:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dioxygen</bp:name>
+    <bp:xref rdf:resource="#UnificationXref9" />
+  </bp:SmallMoleculeReference>
+  <bp:UnificationXref rdf:ID="UnificationXref9">
+    <bp:db rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ChEBI</bp:db>
+    <bp:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CHEBI:15379</bp:id>
+  </bp:UnificationXref>
+  <bp:UnificationXref rdf:ID="UnificationXref10">
+    <bp:db rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Reactome Database ID Release 84</bp:db>
+    <bp:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">29368</bp:id>
+    <bp:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Database identifier. Use this URL to connect to the web page of this instance in Reactome: http://www.reactome.org/cgi-bin/eventbrowser?DB=gk_current&amp;ID=29368</bp:comment>
+  </bp:UnificationXref>
+  <bp:UnificationXref rdf:ID="UnificationXref11">
+    <bp:db rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Reactome</bp:db>
+    <bp:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">R-ALL-29368</bp:id>
+    <bp:idVersion rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5</bp:idVersion>
+    <bp:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Reactome stable identifier. Use this URL to connect to the web page of this instance in Reactome: http://www.reactome.org/cgi-bin/eventbrowser_st_id?ST_ID=R-ALL-29368.5</bp:comment>
+  </bp:UnificationXref>
+  <bp:RelationshipXref rdf:ID="RelationshipXref3">
+    <bp:relationshipType rdf:resource="#RelationshipTypeVocabulary1" />
+    <bp:db rdf:datatype="http://www.w3.org/2001/XMLSchema#string">COMPOUND</bp:db>
+    <bp:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C00007</bp:id>
+  </bp:RelationshipXref>
+  <bp:Catalysis rdf:ID="Catalysis1">
+    <bp:controller rdf:resource="#Complex1" />
+    <bp:controlled rdf:resource="#BiochemicalReaction1" />
+    <bp:controlType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ACTIVATION</bp:controlType>
+    <bp:xref rdf:resource="#RelationshipXref5" />
+    <bp:xref rdf:resource="#RelationshipXref6" />
+    <bp:dataSource rdf:resource="#Provenance1" />
+  </bp:Catalysis>
+  <bp:Complex rdf:ID="Complex1">
+    <bp:displayName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PAH S40L:Fe2+ tetramer</bp:displayName>
+    <bp:cellularLocation rdf:resource="#CellularLocationVocabulary1" />
+    <bp:componentStoichiometry rdf:resource="#Stoichiometry1" />
+    <bp:component rdf:resource="#Protein1" />
+    <bp:componentStoichiometry rdf:resource="#Stoichiometry2" />
+    <bp:component rdf:resource="#SmallMolecule4" />
+    <bp:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Reactome DB_ID: 9631879</bp:comment>
+    <bp:xref rdf:resource="#UnificationXref20" />
+    <bp:xref rdf:resource="#UnificationXref21" />
+    <bp:dataSource rdf:resource="#Provenance1" />
+  </bp:Complex>
+  <bp:Protein rdf:ID="Protein1">
+    <bp:displayName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PAH S40L</bp:displayName>
+    <bp:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">phenylalanine hydroxylase apoprotein monomer</bp:name>
+    <bp:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">phenylalanine-4-hydroxylase</bp:name>
+    <bp:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PH4H_HUMAN</bp:name>
+    <bp:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Phenylalanine-4-hydroxylase</bp:name>
+    <bp:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Phe-4- monooxygenase</bp:name>
+    <bp:cellularLocation rdf:resource="#CellularLocationVocabulary1" />
+    <bp:entityReference rdf:resource="#ProteinReference1" />
+    <bp:feature rdf:resource="#ModificationFeature1" />
+    <bp:feature rdf:resource="#FragmentFeature1" />
+    <bp:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Reactome DB_ID: 5649486</bp:comment>
+    <bp:xref rdf:resource="#UnificationXref15" />
+    <bp:xref rdf:resource="#UnificationXref16" />
+    <bp:dataSource rdf:resource="#Provenance1" />
+  </bp:Protein>
+  <bp:ProteinReference rdf:ID="ProteinReference1">
+    <bp:organism rdf:resource="#BioSource1" />
+    <bp:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UniProt:P00439 PAH</bp:name>
+    <bp:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PAH</bp:name>
+    <bp:xref rdf:resource="#UnificationXref13" />
+    <bp:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FUNCTION Catalyzes the hydroxylation of L-phenylalanine to L-tyrosine.ACTIVITY REGULATION N-terminal region of PAH is thought to contain allosteric binding sites for phenylalanine and to constitute an 'inhibitory' domain that regulates the activity of a catalytic domain in the C-terminal portion of the molecule.PATHWAY Amino-acid degradation; L-phenylalanine degradation; acetoacetate and fumarate from L-phenylalanine: step 1/6.SUBUNIT Homodimer and homotetramer.PTM Phosphorylation at Ser-16 increases basal activity and facilitates activation by the substrate phenylalanine.POLYMORPHISM The Glu-274 variant occurs on approximately 4% of African-American PAH alleles. The enzyme activity of the variant protein is indistinguishable from that of the wild-type form.SIMILARITY Belongs to the biopterin-dependent aromatic amino acid hydroxylase family.</bp:comment>
+  </bp:ProteinReference>
+  <bp:BioSource rdf:ID="BioSource1">
+    <bp:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Homo sapiens</bp:name>
+    <bp:xref rdf:resource="#UnificationXref12" />
+  </bp:BioSource>
+  <bp:UnificationXref rdf:ID="UnificationXref12">
+    <bp:db rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCBI Taxonomy</bp:db>
+    <bp:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">9606</bp:id>
+  </bp:UnificationXref>
+  <bp:UnificationXref rdf:ID="UnificationXref13">
+    <bp:db rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UniProt</bp:db>
+    <bp:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">P00439</bp:id>
+  </bp:UnificationXref>
+  <bp:ModificationFeature rdf:ID="ModificationFeature1">
+    <bp:featureLocation rdf:resource="#SequenceSite1" />
+    <bp:modificationType rdf:resource="#SequenceModificationVocabulary1" />
+  </bp:ModificationFeature>
+  <bp:SequenceSite rdf:ID="SequenceSite1">
+    <bp:sequencePosition rdf:datatype="http://www.w3.org/2001/XMLSchema#int">40</bp:sequencePosition>
+    <bp:positionStatus rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EQUAL</bp:positionStatus>
+  </bp:SequenceSite>
+  <bp:SequenceModificationVocabulary rdf:ID="SequenceModificationVocabulary1">
+    <bp:term rdf:datatype="http://www.w3.org/2001/XMLSchema#string">L-serine removal</bp:term>
+    <bp:xref rdf:resource="#UnificationXref14" />
+  </bp:SequenceModificationVocabulary>
+  <bp:UnificationXref rdf:ID="UnificationXref14">
+    <bp:db rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MOD</bp:db>
+    <bp:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MOD:01646</bp:id>
+  </bp:UnificationXref>
+  <bp:FragmentFeature rdf:ID="FragmentFeature1">
+    <bp:featureLocation rdf:resource="#SequenceInterval1" />
+  </bp:FragmentFeature>
+  <bp:SequenceInterval rdf:ID="SequenceInterval1">
+    <bp:sequenceIntervalBegin rdf:resource="#SequenceSite2" />
+    <bp:sequenceIntervalEnd rdf:resource="#SequenceSite3" />
+  </bp:SequenceInterval>
+  <bp:SequenceSite rdf:ID="SequenceSite2">
+    <bp:sequencePosition rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2</bp:sequencePosition>
+    <bp:positionStatus rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EQUAL</bp:positionStatus>
+  </bp:SequenceSite>
+  <bp:SequenceSite rdf:ID="SequenceSite3">
+    <bp:sequencePosition rdf:datatype="http://www.w3.org/2001/XMLSchema#int">452</bp:sequencePosition>
+    <bp:positionStatus rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EQUAL</bp:positionStatus>
+  </bp:SequenceSite>
+  <bp:UnificationXref rdf:ID="UnificationXref15">
+    <bp:db rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Reactome Database ID Release 84</bp:db>
+    <bp:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5649486</bp:id>
+    <bp:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Database identifier. Use this URL to connect to the web page of this instance in Reactome: http://www.reactome.org/cgi-bin/eventbrowser?DB=gk_current&amp;ID=5649486</bp:comment>
+  </bp:UnificationXref>
+  <bp:UnificationXref rdf:ID="UnificationXref16">
+    <bp:db rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Reactome</bp:db>
+    <bp:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">R-HSA-5649486</bp:id>
+    <bp:idVersion rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1</bp:idVersion>
+    <bp:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Reactome stable identifier. Use this URL to connect to the web page of this instance in Reactome: http://www.reactome.org/cgi-bin/eventbrowser_st_id?ST_ID=R-HSA-5649486.1</bp:comment>
+  </bp:UnificationXref>
+  <bp:Stoichiometry rdf:ID="Stoichiometry1">
+    <bp:stoichiometricCoefficient rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4</bp:stoichiometricCoefficient>
+    <bp:physicalEntity rdf:resource="#Protein1" />
+  </bp:Stoichiometry>
+  <bp:SmallMolecule rdf:ID="SmallMolecule4">
+    <bp:displayName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fe2+</bp:displayName>
+    <bp:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">iron (ferrous)</bp:name>
+    <bp:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">iron atom</bp:name>
+    <bp:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fe(II)</bp:name>
+    <bp:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fe++</bp:name>
+    <bp:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Iron</bp:name>
+    <bp:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fe3+</bp:name>
+    <bp:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fe(III)</bp:name>
+    <bp:cellularLocation rdf:resource="#CellularLocationVocabulary1" />
+    <bp:entityReference rdf:resource="#SmallMoleculeReference4" />
+    <bp:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Reactome DB_ID: 71067</bp:comment>
+    <bp:xref rdf:resource="#UnificationXref18" />
+    <bp:xref rdf:resource="#UnificationXref19" />
+    <bp:dataSource rdf:resource="#Provenance1" />
+    <bp:xref rdf:resource="#RelationshipXref4" />
+  </bp:SmallMolecule>
+  <bp:SmallMoleculeReference rdf:ID="SmallMoleculeReference4">
+    <bp:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">iron(2+) [ChEBI:29033]</bp:name>
+    <bp:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">iron(2+)</bp:name>
+    <bp:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FE (II) ION</bp:name>
+    <bp:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fe2+</bp:name>
+    <bp:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fe(2+)</bp:name>
+    <bp:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">iron ion(2+)</bp:name>
+    <bp:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fe(II)</bp:name>
+    <bp:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ferrous ion</bp:name>
+    <bp:xref rdf:resource="#UnificationXref17" />
+  </bp:SmallMoleculeReference>
+  <bp:UnificationXref rdf:ID="UnificationXref17">
+    <bp:db rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ChEBI</bp:db>
+    <bp:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CHEBI:29033</bp:id>
+  </bp:UnificationXref>
+  <bp:UnificationXref rdf:ID="UnificationXref18">
+    <bp:db rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Reactome Database ID Release 84</bp:db>
+    <bp:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">71067</bp:id>
+    <bp:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Database identifier. Use this URL to connect to the web page of this instance in Reactome: http://www.reactome.org/cgi-bin/eventbrowser?DB=gk_current&amp;ID=71067</bp:comment>
+  </bp:UnificationXref>
+  <bp:UnificationXref rdf:ID="UnificationXref19">
+    <bp:db rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Reactome</bp:db>
+    <bp:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">R-ALL-71067</bp:id>
+    <bp:idVersion rdf:datatype="http://www.w3.org/2001/XMLSchema#string">4</bp:idVersion>
+    <bp:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Reactome stable identifier. Use this URL to connect to the web page of this instance in Reactome: http://www.reactome.org/cgi-bin/eventbrowser_st_id?ST_ID=R-ALL-71067.4</bp:comment>
+  </bp:UnificationXref>
+  <bp:RelationshipXref rdf:ID="RelationshipXref4">
+    <bp:relationshipType rdf:resource="#RelationshipTypeVocabulary1" />
+    <bp:db rdf:datatype="http://www.w3.org/2001/XMLSchema#string">COMPOUND</bp:db>
+    <bp:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C00023</bp:id>
+  </bp:RelationshipXref>
+  <bp:Stoichiometry rdf:ID="Stoichiometry2">
+    <bp:stoichiometricCoefficient rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4</bp:stoichiometricCoefficient>
+    <bp:physicalEntity rdf:resource="#SmallMolecule4" />
+  </bp:Stoichiometry>
+  <bp:UnificationXref rdf:ID="UnificationXref20">
+    <bp:db rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Reactome Database ID Release 84</bp:db>
+    <bp:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">9631879</bp:id>
+    <bp:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Database identifier. Use this URL to connect to the web page of this instance in Reactome: http://www.reactome.org/cgi-bin/eventbrowser?DB=gk_current&amp;ID=9631879</bp:comment>
+  </bp:UnificationXref>
+  <bp:UnificationXref rdf:ID="UnificationXref21">
+    <bp:db rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Reactome</bp:db>
+    <bp:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">R-HSA-9631879</bp:id>
+    <bp:idVersion rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2</bp:idVersion>
+    <bp:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Reactome stable identifier. Use this URL to connect to the web page of this instance in Reactome: http://www.reactome.org/cgi-bin/eventbrowser_st_id?ST_ID=R-HSA-9631879.2</bp:comment>
+  </bp:UnificationXref>
+  <bp:RelationshipXref rdf:ID="RelationshipXref5">
+    <bp:db rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GENE ONTOLOGY</bp:db>
+    <bp:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GO:0004505</bp:id>
+    <bp:relationshipType rdf:resource="#RelationshipTypeVocabulary2" />
+  </bp:RelationshipXref>
+  <bp:RelationshipTypeVocabulary rdf:ID="RelationshipTypeVocabulary2">
+    <bp:term rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gene ontology term for cellular function</bp:term>
+    <bp:xref rdf:resource="#UnificationXref22" />
+  </bp:RelationshipTypeVocabulary>
+  <bp:UnificationXref rdf:ID="UnificationXref22">
+    <bp:db rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MI</bp:db>
+    <bp:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MI:0355</bp:id>
+  </bp:UnificationXref>
+  <bp:RelationshipTypeVocabulary rdf:ID="RelationshipTypeVocabulary3">
+    <bp:term rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Same Catalyst Activity</bp:term>
+  </bp:RelationshipTypeVocabulary>
+  <bp:RelationshipXref rdf:ID="RelationshipXref6">
+    <bp:db rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Reactome Database ID Release 84</bp:db>
+    <bp:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">9631945</bp:id>
+    <bp:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Database identifier. Use this URL to connect to the web page of this instance in Reactome: http://www.reactome.org/cgi-bin/eventbrowser?DB=gk_current&amp;ID=9631945</bp:comment>
+    <bp:relationshipType rdf:resource="#RelationshipTypeVocabulary3" />
+  </bp:RelationshipXref>
+  <bp:UnificationXref rdf:ID="UnificationXref23">
+    <bp:db rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Reactome Database ID Release 84</bp:db>
+    <bp:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5649483</bp:id>
+    <bp:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Database identifier. Use this URL to connect to the web page of this instance in Reactome: http://www.reactome.org/cgi-bin/eventbrowser?DB=gk_current&amp;ID=5649483</bp:comment>
+  </bp:UnificationXref>
+  <bp:UnificationXref rdf:ID="UnificationXref24">
+    <bp:db rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Reactome</bp:db>
+    <bp:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">R-HSA-5649483</bp:id>
+    <bp:idVersion rdf:datatype="http://www.w3.org/2001/XMLSchema#string">3</bp:idVersion>
+    <bp:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Reactome stable identifier. Use this URL to connect to the web page of this instance in Reactome: http://www.reactome.org/cgi-bin/eventbrowser_st_id?ST_ID=R-HSA-5649483.3</bp:comment>
+  </bp:UnificationXref>
+  <bp:PublicationXref rdf:ID="PublicationXref1">
+    <bp:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">21555948</bp:id>
+    <bp:db rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pubmed</bp:db>
+    <bp:year rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2011</bp:year>
+    <bp:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Phenylalanine hydroxylase deficiency</bp:title>
+    <bp:author rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mitchell, John J</bp:author>
+    <bp:author rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Trakadis, Yannis J</bp:author>
+    <bp:author rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Scriver, Charles R</bp:author>
+    <bp:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Genet. Med. 13:697-707</bp:source>
+  </bp:PublicationXref>
+  <bp:PublicationXref rdf:ID="PublicationXref2">
+    <bp:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">8889590</bp:id>
+    <bp:db rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pubmed</bp:db>
+    <bp:year rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1996</bp:year>
+    <bp:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Phenylalanine hydroxylase deficiency in a population in Germany: mutational profile and nine novel mutations</bp:title>
+    <bp:author rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Guldberg, P</bp:author>
+    <bp:author rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mallmann, R</bp:author>
+    <bp:author rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Henriksen, KF</bp:author>
+    <bp:author rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Güttler, F</bp:author>
+    <bp:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hum Mutat 8:276-9</bp:source>
+  </bp:PublicationXref>
+  <bp:PathwayStep rdf:ID="PathwayStep1">
+    <bp:stepProcess rdf:resource="#BiochemicalReaction1" />
+    <bp:stepProcess rdf:resource="#Catalysis1" />
+  </bp:PathwayStep>
+  <bp:UnificationXref rdf:ID="UnificationXref25">
+    <bp:db rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Reactome Database ID Release 84</bp:db>
+    <bp:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2160456</bp:id>
+    <bp:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Database identifier. Use this URL to connect to the web page of this instance in Reactome: http://www.reactome.org/cgi-bin/eventbrowser?DB=gk_current&amp;ID=2160456</bp:comment>
+  </bp:UnificationXref>
+  <bp:UnificationXref rdf:ID="UnificationXref26">
+    <bp:db rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Reactome</bp:db>
+    <bp:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">R-HSA-2160456</bp:id>
+    <bp:idVersion rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2</bp:idVersion>
+    <bp:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Reactome stable identifier. Use this URL to connect to the web page of this instance in Reactome: http://www.reactome.org/cgi-bin/eventbrowser_st_id?ST_ID=R-HSA-2160456.2</bp:comment>
+  </bp:UnificationXref>
+  <bp:PublicationXref rdf:ID="PublicationXref3">
+    <bp:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2116554</bp:id>
+    <bp:db rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pubmed</bp:db>
+    <bp:year rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1990</bp:year>
+    <bp:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Plasma concentrations of phenyllactic acid in phenylketonuria</bp:title>
+    <bp:author rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Clemens, PC</bp:author>
+    <bp:author rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Schunemann, MH</bp:author>
+    <bp:author rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hoffmann, GF</bp:author>
+    <bp:author rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kohlschutter, A</bp:author>
+    <bp:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">J Inherit Metab Dis 13:227-8</bp:source>
+  </bp:PublicationXref>
+  <bp:PublicationXref rdf:ID="PublicationXref4">
+    <bp:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">17356132</bp:id>
+    <bp:db rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pubmed</bp:db>
+    <bp:year rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2007</bp:year>
+    <bp:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Human IL4I1 is a secreted L-phenylalanine oxidase expressed by mature dendritic cells that inhibits T-lymphocyte proliferation</bp:title>
+    <bp:author rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Boulland, ML</bp:author>
+    <bp:author rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Marquet, J</bp:author>
+    <bp:author rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Molinier-Frenkel, V</bp:author>
+    <bp:author rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Moller, P</bp:author>
+    <bp:author rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Guiter, C</bp:author>
+    <bp:author rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lasoudris, F</bp:author>
+    <bp:author rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Copie-Bergman, C</bp:author>
+    <bp:author rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Baia, M</bp:author>
+    <bp:author rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gaulard, P</bp:author>
+    <bp:author rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Leroy, K</bp:author>
+    <bp:author rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Castellano, F</bp:author>
+    <bp:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Blood 110:220-7</bp:source>
+  </bp:PublicationXref>
+  <bp:PublicationXref rdf:ID="PublicationXref5">
+    <bp:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">8892014</bp:id>
+    <bp:db rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pubmed</bp:db>
+    <bp:year rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1996</bp:year>
+    <bp:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In vivo disposal of phenylalanine in phenylketonuria: a study of two siblings</bp:title>
+    <bp:author rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Treacy, E</bp:author>
+    <bp:author rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pitt, JJ</bp:author>
+    <bp:author rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Seller, K</bp:author>
+    <bp:author rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Thompson, GN</bp:author>
+    <bp:author rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ramus, S</bp:author>
+    <bp:author rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cotton, RG</bp:author>
+    <bp:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">J Inherit Metab Dis 19:595-602</bp:source>
+  </bp:PublicationXref>
+  <bp:PublicationXref rdf:ID="PublicationXref6">
+    <bp:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">15421980</bp:id>
+    <bp:db rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pubmed</bp:db>
+    <bp:year rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1950</bp:year>
+    <bp:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Reduction of alpha gamma-diketo and alpha-keto acids catalyzed by muscle preparations and by crystalline lactic dehydrogenase</bp:title>
+    <bp:author rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Meister, Alton</bp:author>
+    <bp:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">J Biol Chem 184:117-29</bp:source>
+  </bp:PublicationXref>
+  <bp:PublicationXref rdf:ID="PublicationXref7">
+    <bp:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1583868</bp:id>
+    <bp:db rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pubmed</bp:db>
+    <bp:year rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1992</bp:year>
+    <bp:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A synopsis of the unconjugated acidic transamination metabolites of phenylalanine in phenylketonuria</bp:title>
+    <bp:author rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Langenbeck, U</bp:author>
+    <bp:author rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Behbehani, A</bp:author>
+    <bp:author rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mench-Hoinowski, A</bp:author>
+    <bp:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">J Inherit Metab Dis 15:136-44</bp:source>
+  </bp:PublicationXref>
+  <bp:PublicationXref rdf:ID="PublicationXref8">
+    <bp:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">15606768</bp:id>
+    <bp:db rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pubmed</bp:db>
+    <bp:year rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2004</bp:year>
+    <bp:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pH dependence, substrate specificity and inhibition of human kynurenine aminotransferase I</bp:title>
+    <bp:author rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Han, Q</bp:author>
+    <bp:author rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Li, J</bp:author>
+    <bp:author rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Li, J</bp:author>
+    <bp:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Eur J Biochem 271:4804-14</bp:source>
+  </bp:PublicationXref>
+</rdf:RDF>
+
